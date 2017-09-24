@@ -28,39 +28,39 @@
         <fieldset class="feedback__userdata userdata">
           <h2 class="userdata__heading heading">Представьтесь:</h2>
           <label class="userdata__label text">Имя<sup>*</sup>:
-            <input class="userdata__input text" type="text" name="name" placeholder="Петр">
+            <input class="userdata__input text-bold" type="text" name="name" placeholder="Петр">
           </label>
           <label class="userdata__label text" for="surname">Фамилия<sup>*</sup>:
-            <input class="userdata__input text" id="surname" type="text" name="surname" placeholder="Иванов">
+            <input class="userdata__input text-bold" id="surname" type="text" name="surname" placeholder="Иванов">
           </label>
           <label class="userdata__label text" for="patronymic">Отчество
-            <input class="userdata__input text" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+            <input class="userdata__input text-bold" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
           </label>
         </fieldset>
         <fieldset class="feedback__userdata userdata">
           <h2 class="userdata__heading heading">Контактная информация:</h2>
           <label class="userdata__label text">Контактный телефон<sup>*</sup>:
-            <input class="userdata__input text" type="tel" name="phone" placeholder="Введите телефон">
+            <input class="userdata__input text-bold" type="tel" name="phone" placeholder="Введите телефон">
           </label>
           <label class="userdata__label text">Электронная почта<sup>*</sup>:
-            <input class="userdata__input text" type="email" name="email" placeholder="Введите e-mail">
+            <input class="userdata__input text-bold" type="email" name="email" placeholder="Введите e-mail">
           </label>
         </fieldset>
         <fieldset class="feedback__group group">
           <h2 class="group__heading heading">Ваше общее впечатление:</h2>
-          <label class="group__label" for="positive">Скорее положительное</label>
-          <label class="group__label" for="negative">Скорее отрицательное</label>
-          <label class="group__label" for="idontknow">Затрудняюсь ответить</label>
+          <label class="group__label text-bold" for="positive">Скорее положительное</label>
+          <label class="group__label text-bold" for="negative">Скорее отрицательное</label>
+          <label class="group__label text-bold" for="idontknow">Затрудняюсь ответить</label>
           <input class="group__input" type="radio" id="positive" name="impression" value="positive" checked>
           <input class="group__input" type="radio" id="negative" name="impression" value="negative">
           <input class="group__input" type="radio" id="idontknow" name="impression" value="idontknow">
         </fieldset>
         <fieldset class="feedback__group group">
           <h2 class="group__heading heading">Посещенные достопримечательности:</h2>
-          <label class="group__label" for="devil's-bridge">Мост дьявола</label>
-          <label class="group__label" for="slide-park">Слайд-парк</label>
-          <label class="group__label" for="mountain-bell">Гора-колокол</label>
-          <label class="group__label" for="red-rocks">Красные скалы</label>
+          <label class="group__label text-bold" for="devil's-bridge">Мост дьявола</label>
+          <label class="group__label text-bold" for="slide-park">Слайд-парк</label>
+          <label class="group__label text-bold" for="mountain-bell">Гора-колокол</label>
+          <label class="group__label text-bold" for="red-rocks">Красные скалы</label>
           <input class="group__input" type="checkbox" id="devil's-bridge" name="devil's-bridge" checked>
           <input class="group__input" type="checkbox" id="slide-park" name="slide-park" checked>
           <input class="group__input" type="checkbox" id="mountain-bell" name="mountain-bell">
@@ -68,7 +68,7 @@
         </fieldset>
         <fieldset class="feedback__group group">
           <h2 class="group__heading heading">Опишите свои эмоции:</h2>
-          <textarea class="group__textarea"></textarea>
+          <textarea class="group__textarea text-bold" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback__button button" type="submit">Отправить отзыв</button>
       </form>
