@@ -2,11 +2,93 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона - главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo" src="http://placehold.it/102x83" alt="Логотип Седона" width="102" height="83">
+      </a>
+      <button class="page-header__toggler" type="button">Меню</button>
+      <div class="main-nav">
+        <nav class="main-nav__list">
+          <a class="main-nav__item" href="#">Главная</a>
+          <a class="main-nav__item" href="#">Фото и видео</a>
+          <a class="main-nav__item" href="#">Форма отзыва</a>
+          <a class="main-nav__item" href="#">Html Academy</a>
+        </nav>
+        <button class="main-nav__button" type="button">Закрыть</button>
+      </div>
+    </header>
+    <main class="page-main">
+      <img class="page-main__picture" src="http://placehold.it/320x389" alt="Пейзаж Седоны" width="320" height="389">
+      <h1 class="page-main__heading heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="page-main__text text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <section class="features">
+        <section class="feature">
+          <h2 class="feature__heading heading">Настоящий городок</h2>
+          <p class="feature__text text">— №1 —</p>
+          <p class="feature__text text">Седона не аттракцион </p>
+          <img class="feature__image" src="http://placehold.it/320x260" alt="Вид на улицу Судоны" width="320" height="260">
+          <section class="feature__item feature-item">
+            <img class="feature-item__icon" src="http://placehold.it/39x37" alt="Иконка домика" width="40" height="35">
+            <h3 class="feature-item__heading heading">Жилье</h3>
+            <p class="feature-item__text text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </section>
+          <section class="feature__item feature-item">
+            <img class="feature-item__icon" src="http://placehold.it/32x38" alt="Иконка подарка" width="32" height="38">
+            <h3 class="feature-item__heading heading">Сувениры</h3>
+            <p class="feature-item__text text">Не только китайского, но и местного производства!</p>
+          </section>
+          <section class="feature__item feature-item">
+            <img class="feature-item__icon" src="http://placehold.it/40x35" alt="Иконка гамбургера" width="40" height="35">
+            <h3 class="feature-item__heading heading">Еда</h3>
+            <p class="feature-item__text text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </section>
+        </section>
+        <section class="feature">
+          <h2 class="feature__heading heading">Там есть мост дьявола</h2>
+          <p class="feature__text text">— №2 —</p>
+          <p class="feature__text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="feature__image" src="http://placehold.it/320x260" alt="Вид на мост дьявола" width="320" height="260">
+        </section>
+        <section class="feature">
+          <h2 class="feature__heading heading">Небольшая площадь</h2>
+          <p class="feature__text text">— №3 —</p>
+          <p class="feature__text text">Все интересные места находятся очень близко</p>
+        </section>
+        <section class="feature">
+          <h2 class="feature__heading heading">Красивая дорога</h2>
+          <p class="feature__text text">— №4 —</p>
+          <p class="feature__text text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </section>
+        <section class="feature">
+          <h2 class="feature__heading heading">Мало туристов</h2>
+          <p class="feature__text text">— №5 —</p>
+          <p class="feature__text text">Большинство едет в Гранд Каньон и толпится там</p>
+        </section>
+      </section>
+      <section class="to-find">
+        <h2 class="to-find-form__heading heading">Заинтересовались?</h2>
+        <p class="to-find-form__text">Укажите предполагаемые даты поездки, и мы вам покажем лучшие предложения гостиниц в Седоне</p>
+        <a class="to-find-form__link button" href="form.html">Найти гостиницу</a>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта Аризоны</h2>
+        <img class="map__image" src="http://placehold.it/320x350" alt="Карта Аризоны" height="320" width="350">
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__hashtag heading" href="#">#VisitSedona</a>
+      <section class="footer__social social">
+        <h3 class="social__heading heading">Ссылки на социальные сети</h3>
+        <a class="social__link social__link--twitter" href="#">Twitter</a>
+        <a class="social__link social__link--facebook" href="#">Facebook</a>
+        <a class="social__link social__link--youtube" href="#">YouTube</a>
+      </section>
+      <a class="footer__copyright-link" href="#">
+        <img class="footer__copyright-image" src="http://placehold.it/27x34" alt="Логотип HTML Academy" width="27" height="34">
+      </a>
+    </footer>
   </body>
 </html>
