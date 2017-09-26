@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - отзывы</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="Логотип Седона" width="102" height="83">
+      </a>
+      <button class="page-header__toggler" type="button">Меню</button>
+      <div class="main-nav">
+        <nav class="main-nav__list">
+          <a class="main-nav__item" href="#">Главная</a>
+          <a class="main-nav__item" href="#">Фото и видео</a>
+          <a class="main-nav__item" href="#">Форма отзыва</a>
+          <a class="main-nav__item" href="#">Html Academy</a>
+        </nav>
+        <button class="main-nav__button" type="button">Закрыть</button>
+      </div>
+    </header>
+    <main class="page-main">
+      <img class="page-main__image" src="http://placehold.it/320x158" alt="Пейзаж Седоны" width="320" height="158">
+      <h1 class="page-main__heading heading">Оставьте свой отзыв</h1>
+      <p class="page-main__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="page-main__form feedback" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="feedback__userdata userdata">
+          <h2 class="userdata__heading heading">Представьтесь:</h2>
+          <label class="userdata__label text">Имя<sup>*</sup>:
+            <input class="userdata__input text-bold" type="text" name="name" placeholder="Петр">
+          </label>
+          <label class="userdata__label text" for="surname">Фамилия<sup>*</sup>:
+            <input class="userdata__input text-bold" id="surname" type="text" name="surname" placeholder="Иванов">
+          </label>
+          <label class="userdata__label text" for="patronymic">Отчество
+            <input class="userdata__input text-bold" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__userdata userdata">
+          <h2 class="userdata__heading heading">Контактная информация:</h2>
+          <label class="userdata__label text">Контактный телефон<sup>*</sup>:
+            <input class="userdata__input text-bold" type="tel" name="phone" placeholder="Введите телефон">
+          </label>
+          <label class="userdata__label text">Электронная почта<sup>*</sup>:
+            <input class="userdata__input text-bold" type="email" name="email" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__group group">
+          <h2 class="group__heading heading">Ваше общее впечатление:</h2>
+          <label class="group__label">
+            <input class="group__input" type="radio" name="impression" value="positive" checked>
+            <span class="group__span text-bold">Скорее положительное</span>
+          </label>
+          <label class="group__label">
+            <input class="group__input" type="radio" name="impression" value="negative">
+            <span class="group__span text-bold">Скорее отрицательное</span>
+          </label>
+          <label class="group__label">
+            <input class="group__input" type="radio" name="impression" value="idontknow">
+            <span class="group__span text-bold">Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
+        <fieldset class="feedback__group group">
+          <h2 class="group__heading heading">Посещенные достопримечательности:</h2>
+          <label class="group__label">
+            <input class="group__input" type="checkbox" name="devil's-bridge" checked>
+            <span class="group__span text-bold">Мост дьявола</span>
+          </label>
+          <label class="group__label">
+            <input class="group__input" type="checkbox" name="slide-park" checked>
+            <span class="group__span text-bold">Слайд-парк</span>
+          </label>
+          <label class="group__label">
+            <input class="group__input" type="checkbox" name="mountain-bell">
+            <span class="group__span text-bold">Гора-колокол</span>
+          </label>
+          <label class="group__label">
+            <input class="group__input" type="checkbox" name="red-rocks" checked>
+            <span class="group__span text-bold">Красные скалы</span>
+          </label>
+        </fieldset>
+        <fieldset class="feedback__group group">
+          <h2 class="group__heading heading">Опишите свои эмоции:</h2>
+          <textarea class="group__textarea text-bold" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="feedback__button button" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="footer">
+        <a class="footer__hashtag" href="#">#VisitSedona</a>
+        <section class="footer__social social">
+          <h3 class="social__header">Ссылки на социальные сети</h3>
+          <a class="social__link social__link--twitter" href="#">Twitter</a>
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+          <a class="social__link social__link--youtube" href="#">YouTube</a>
+        </section>
+        <a class="footer__copyright-link" href="#">
+          <img class="footer__copyright-image" src="http://placehold.it/27x34" alt="Логотип HTML Academy" width="27" height="34">
+        </a>
+      </footer>
+  </body>
+</html>
