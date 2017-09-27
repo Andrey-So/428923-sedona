@@ -5,11 +5,11 @@
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "7.1.x",
-    "grunt": "1.0.x",
-    "grunt-browser-sync": "2.2.x",
-    "grunt-contrib-less": "1.4.x",
-    "grunt-contrib-watch": "1.0.x",
-    "grunt-postcss": "0.9.x",
+    "browser-sync": "2.18.x",
+    "gulp": "3.9.x",
+    "gulp-less": "3.3.x",
+    "gulp-plumber": "1.1.x",
+    "gulp-postcss": "7.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -18,8 +18,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'less/**/*.less' --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "grunt less && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "build": "gulp style",
+    "start": "gulp serve"
   },
   "browserslist": [
     "last 2 versions",
