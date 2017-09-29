@@ -3,40 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - отзывы</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="Логотип Седона" width="102" height="83">
-      </a>
-      <button class="page-header__toggler" type="button">Меню</button>
-      <div class="main-nav">
-        <nav class="main-nav__list">
-          <a class="main-nav__item" href="#">Главная</a>
-          <a class="main-nav__item" href="#">Фото и видео</a>
-          <a class="main-nav__item" href="#">Форма отзыва</a>
-          <a class="main-nav__item" href="#">Html Academy</a>
-        </nav>
-        <button class="main-nav__button" type="button">Закрыть</button>
-      </div>
-    </header>
+      <header class="page-header">
+          <div class="main-nav">
+            <button class="main-nav__button" type="button">
+                <svg class="main-nav__icon" fill="#ffffff" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+                  <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+                </svg>
+            </button>
+            <nav class="main-nav__list">
+              <a class="main-nav__item" href="#">Главная</a>
+              <a class="main-nav__item" href="#">Фото и видео</a>
+              <a class="main-nav__item" href="#">Форма отзыва</a>
+              <a class="main-nav__item" href="#">Html Academy</a>
+            </nav>
+          </div>
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+          </a>
+          <button class="page-header__toggler" type="button">
+              <svg class="page-hedaer__icon" fill="#81b3d2" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+                <g>
+                  <rect width="22.928" height="3.964"/>
+                  <rect y="9.009" width="22.928" height="3.964"/>
+                  <rect y="18.018" width="22.928" height="3.964"/>
+                </g>
+              </svg>
+          </button>
+        </header>
     <main class="page-main">
-      <img class="page-main__image" src="http://placehold.it/320x158" alt="Пейзаж Седоны" width="320" height="158">
-      <h1 class="page-main__heading heading">Оставьте свой отзыв</h1>
-      <p class="page-main__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="page-main__intro form-intro">
+        <img class="form-intro__text-img" src="img/text-sedona.svg" width="230" height="39">
+      </div>
+      <div class="page-main__banner form-banner">
+        <h1 class="form-banner__heading heading">Оставьте свой отзыв</h1>
+        <p class="form-banner__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <div class="form-divider">
+        <div class="form-divider-line"></div>
+      </div>
       <form class="page-main__form feedback" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="feedback__userdata userdata">
           <h2 class="userdata__heading heading">Представьтесь:</h2>
-          <label class="userdata__label text">Имя<sup>*</sup>:
-            <input class="userdata__input text-bold" type="text" name="name" placeholder="Петр">
+          <label class="userdata__label--name text">Имя<sup>*</sup>:
+            <input class="userdata__input--name text-bold" type="text" name="name" placeholder="Петр">
           </label>
-          <label class="userdata__label text" for="surname">Фамилия<sup>*</sup>:
-            <input class="userdata__input text-bold" id="surname" type="text" name="surname" placeholder="Иванов">
+          <label class="userdata__label--surname text" for="surname">Фамилия<sup>*</sup>:
+            <input class="userdata__input--surname text-bold" id="surname" type="text" name="surname" placeholder="Иванов">
           </label>
-          <label class="userdata__label text" for="patronymic">Отчество
-            <input class="userdata__input text-bold" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+          <label class="userdata__label--patronymic text" for="patronymic">Отчество<sup>*</sup>:
+            <input class="userdata__input--patronymic text-bold" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
           </label>
         </fieldset>
+        <div class="form-divider">
+          <div class="form-divider-line"></div>
+        </div>
         <fieldset class="feedback__userdata userdata">
           <h2 class="userdata__heading heading">Контактная информация:</h2>
           <label class="userdata__label text">Контактный телефон<sup>*</sup>:
