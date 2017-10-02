@@ -16,8 +16,8 @@
         </button>
         <nav class="main-nav__list">
           <a class="main-nav__item" href="#">Главная</a>
-          <a class="main-nav__item" href="#">Фото и видео</a>
-          <a class="main-nav__item" href="#">Форма отзыва</a>
+          <a class="main-nav__item" href="photo.html">Фото и видео</a>
+          <a class="main-nav__item" href="form.html">Форма отзыва</a>
           <a class="main-nav__item" href="#">Html Academy</a>
         </nav>
       </div>
@@ -35,15 +35,15 @@
       </button>
     </header>
     <main class="page-main">
-      <div class="page-main__intro intro">
-        <img class="intro__text-img" src="img/text-sedona-index.svg" width="281" height="218">
+      <div class="page-main__intro main-intro">
+        <img class="main-intro__text-img" src="img/text-sedona-index.svg" width="281" height="218">
       </div>
-      <div class="page-main__banner banner">
-        <h1 class="banner__heading heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="banner__text text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <div class="page-main__banner main-banner">
+        <h1 class="main-banner__heading heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="main-banner__text text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
-      <div class="page-main__triangle triangle">
-        <img  class="triangle__image" src="img/bg-triangle.svg">
+      <div class="page-main__triangle main-triangle">
+        <img  class="main-triangle__image" src="img/bg-triangle.svg">
       </div>
       <section class="features">
         <section class="features__block feature-block-blue">
@@ -130,6 +130,10 @@
       <section class="map">
         <h2 class="visually-hidden">Карта Аризоны</h2>
         <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="Карта Аризоны" height="350" width="320">
+        <svg class="map__marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+          <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+          <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+        </svg>
       </section>
     </main>
     <footer class="footer">
@@ -144,12 +148,12 @@
         <a class="social__link" href="#">Facebook
           <svg version="1.0" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
             <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-          </svg>          
+          </svg>
         </a>
         <a class="social__link" href="#">YouTube
           <svg version="1.0" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
             <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-          </svg>          
+          </svg>
         </a>
       </section>
       <a class="footer__copyright-link" href="#">Разработано
