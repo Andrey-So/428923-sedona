@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke: #f2f2f2;
+        stroke-width: 5px;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        stroke: #333;
+        stroke-width: 3px;
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="-2.5" y="-2.5" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f2f2f2"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="14.5" y="14.5" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#333"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #fff; filter: url(#filter)">
+    <circle id="Shape_2_copy_17" data-name="Shape 2 copy 17" class="cls-1" cx="27.5" cy="27.485" r="22.75" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Shape_2_copy_17" style="stroke: #f2f2f2; filter: none; fill: none"/>
+  <g style="fill: #fff; filter: url(#filter-2)">
+    <circle id="Shape_2_copy_17-2" data-name="Shape 2 copy 17" class="cls-2" cx="27.438" cy="27.435" r="7.594" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Shape_2_copy_17-2" style="stroke: #333; filter: none; fill: none"/>
+</svg>
