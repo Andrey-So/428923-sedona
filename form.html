@@ -42,69 +42,71 @@
         <h1 class="form-banner__heading heading">Оставьте свой отзыв</h1>
         <p class="form-banner__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-      <div class="form-divider"></div>
       <form class="page-main__form feedback" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="feedback__userdata userdata">
-          <h2 class="userdata__heading heading">Представьтесь:</h2>
-          <label class="userdata__label--name text">Имя<sup>*</sup>:
-            <input class="userdata__input--name text-bold" type="text" name="name" placeholder="Петр">
+        <fieldset class="feedback__group">
+          <h2 class="feedback__heading">Представьтесь:</h2>
+          <div class="feedback__content">
+            <label class="feedback__group-item inputline">
+              <span class="inputline__label">Имя*</span>
+              <input type="text" class="inputline__input inputline__input--name" name="name" placeholder="Петр">
+            </label>
+            <label class="feedback__group-item inputline">
+              <span class="inputline__label">Фамилия*</span>
+              <input type="text" class="inputline__input" name="surname" placeholder="Иванов">
+            </label>
+            <label class="feedback__group-item inputline">
+              <span class="inputline__label">Отчество</span>
+              <input type="text" class="inputline__input" name="patronymic" placeholder="Александрович">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback__group">
+          <h2 class="feedback__heading">Контактная информация: </h2>
+          <div class="feedback__content">
+            <label class="feedback__group-item inputline">
+              <span class="inputline__label inputline__label--top">Контактный телефон*:</span>
+              <input type="tel" class="inputline__input inputline__input--phone" name="phone" placeholder="Введите телефон">
+            </label>
+            <label class="feedback__group-item--top inputline">
+              <span class="inputline__label inputline__label--top">Электронная почта*:</span>
+              <input type="email" class="inputline__input  inputline__input--email" name="email" placeholder="Введите e-mail">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback__group">
+          <h2 class="feedback__heading">Ваше общее впечатление:</h2>
+          <label class="feedback__group-item checkline">
+            <input type="radio" class="checkline__input checkline__input--radio" value="positive" name="impressions" checked>
+            <span class="checkline__label">Скорее положительное</span>
           </label>
-          <label class="userdata__label--surname text" for="surname">Фамилия<sup>*</sup>:
-            <input class="userdata__input--surname text-bold" id="surname" type="text" name="surname" placeholder="Иванов">
+          <label class="feedback__group-item checkline">
+            <input type="radio" class="checkline__input checkline__input--radio" value="negative" name="impressions">
+            <span class="checkline__label">Скорее отрицательное</span>
           </label>
-          <label class="userdata__label--patronymic text" for="patronymic">Отчество:
-            <input class="userdata__input--patronymic text-bold" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+          <label class="feedback__group-item checkline">
+            <input type="radio" class="checkline__input checkline__input--radio" value="" name="impressions">
+            <span class="checkline__label">Скорее положительное</span>
           </label>
         </fieldset>
-        <div class="form-divider"></div>
-        <fieldset class="feedback__userdata userdata">
-          <h2 class="userdata__heading heading">Контактная информация:</h2>
-          <label class="userdata__label--phone text">Контактный телефон*:
-            <input class="userdata__input--phone text-bold" type="tel" name="phone" placeholder="Введите телефон">
+        <fieldset class="feedback__group">
+          <h2 class="feedback__heading">Посещенные достопримечательности:</h2>
+          <label class="feedback__group-item checkline">
+            <input type="checkbox" class="checkline__input checkline__input--box" value="devil's-bridge" name="visited-sights" checked>
+            <span class="checkline__label">Мост Дьявола</span>
           </label>
-          <label class="userdata__label--email text">Электронная почта*:
-            <input class="userdata__input--email text-bold" type="email" name="email" placeholder="Введите e-mail">
+          <label class="feedback__group-item checkline">
+            <input type="checkbox" class="checkline__input chechline__input--box" value="slide-park" name="visited-sights" checked>
+            <span class="checkline__label">Слайд-парк</span>
           </label>
-        </fieldset>
-        <div class="form-divider"></div>
-        <fieldset class="feedback__group group">
-          <h2 class="group__heading group__margin heading">Ваше общее впечатление:</h2>
-          <label class="group__label--radio">
-            <input class="visually-hidden group__input--radio" type="radio" name="impression" value="positive" checked>
-            <span class="group__span">Скорее положительное</span>
+          <label class="feedback__group-item checkline">
+            <input type="checkbox" class="checkline__input checkline__input--box" value="bell-tower" name="visited-sights">
+            <span class="checkline__label">Гора-колокол</span>
           </label>
-          <label class="group__label--radio">
-            <input class="visually-hidden group__input--radio" type="radio" name="impression" value="negative">
-            <span class="group__span">Скорее отрицательное</span>
-          </label>
-          <label class="group__label--radio">
-            <input class="visually-hidden group__input--radio" type="radio" name="impression" value="idontknow">
-            <span class="group__span">Затрудняюсь ответить</span>
+          <label class="feedback__group--item checkline">
+            <input type="checkbox" class="checkline__input checklint__input--box" value="red-rocks" name="visited-sights" checked>
+            <span class="checkline__label">Красные скалы</span>
           </label>
         </fieldset>
-        <div class="form-divider"></div>
-        </div>
-        <fieldset class="feedback__group group">
-          <h2 class="group__heading group__margin heading">Посещенные достопримечательности:</h2>
-          <label class="group__label">
-            <input class="visually-hidden" type="checkbox" name="devil's-bridge" checked>
-            <span class="group__span text-bold">Мост дьявола</span>
-          </label>
-          <label class="group__label">
-            <input class="visually-hidden" type="checkbox" name="slide-park" checked>
-            <span class="group__span text-bold">Слайд-парк</span>
-          </label>
-          <label class="group__label">
-            <input class="visually-hidden" type="checkbox" name="mountain-bell">
-            <span class="group__span text-bold">Гора-колокол</span>
-          </label>
-          <label class="group__label">
-            <input class="visually-hidden" type="checkbox" name="red-rocks" checked>
-            <span class="group__span text-bold">Красные скалы</span>
-          </label>
-        </fieldset>
-        <div class="form-divider"></div>
-        </div>
         <fieldset class="feedback__group group">
           <h2 class="group__heading heading">Опишите свои эмоции:</h2>
           <textarea class="group__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
