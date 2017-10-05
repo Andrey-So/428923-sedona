@@ -40,7 +40,7 @@
   }
 
   .feature-block__wrapper--items {
-    width: 768px;
+    width: auto;
     display: flex;
     background-color: #ffffff;
     margin-top: 59px;
@@ -74,5 +74,30 @@
     flex-direction: row-reverse;
     margin-top: 61px;
   }
+}
 
+@media (min-width: 1280px) {
+  .feature-block__heading {
+    margin-top: 52px;
+  }
+
+  .feature-block__wrapper--text {
+    min-width: 400px;
+  }
+
+  .feature-block__text {
+    width: 270px;
+  }
+
+  .feature-block--two {
+    margin-top: 82px;
+  }
+
+  .feature-block__heading--gray {
+    margin-top: 45px;
+  }
+
+  .feature-block__text--gray {
+    margin-bottom: 65px;
+  }
 }
