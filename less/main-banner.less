@@ -1,3 +1,7 @@
+.main-banner {
+  position: relative;
+}
+
 .main-banner__heading {
   margin: 0;
   margin-left: auto;
@@ -12,4 +16,29 @@
   margin-right: auto;
   margin-top: 28px;
   width: 255px;
+}
+
+.main-banner::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 37px;
+    bottom: -41px;
+    background-image: url("../img/bg-triangle.svg");
+}
+
+@media (min-width: 768px) {
+  .main-banner__heading {
+    width: 450px;
+    font-size: 21px;
+    margin-top:46px;
+  }
+
+  .main-banner__text {
+    width: 500px;
+  }
+
+  .main-banner::after {
+    display: none;
+  }
 }

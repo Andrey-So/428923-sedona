@@ -9,6 +9,16 @@ font-weight: bold;
 margin-top: 32px;
 }
 
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  width: 151px;
+}
+
 .footer__copyright-link {
   text-transform: uppercase;
   display: flex;
@@ -19,4 +29,24 @@ margin-top: 32px;
   margin-top: 43px;
   font-size: 14.5px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content:space-around;
+    width: 768px;
+    margin-top: 43px;
+  }
+
+  .footer__hashtag,
+  .footer__social,
+  .footer__copyright-link {
+    margin: 0;
+    align-items: center;
+  }
+
+  .footer__hashtag {
+    margin-top: 10px;
+  }
 }

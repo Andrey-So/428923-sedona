@@ -24,3 +24,40 @@
   line-height:21px;
   width: 210px;
 }
+
+@media (min-width: 768px) {
+  .block-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+  }
+
+  .block-item__icon {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: 0;
+  }
+
+  .block-item__heading {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    margin-top: 25px;
+  }
+
+  .block-item__text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 165px;
+    margin-top: 21px;
+  }
+
+  .block-item--souvenirs {
+    order: 1;
+  }
+}
