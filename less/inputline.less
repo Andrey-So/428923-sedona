@@ -11,6 +11,18 @@
   padding-top:2px;
 }
 
+.inputline__label--phone {
+  text-align: left;
+  margin-left: -75px;
+  margin-top: 2px;
+}
+
+.inputline__label--email {
+  text-align: left;
+  margin-left: -89px;
+  margin-top: 2px;
+}
+
 .inputline__input--name {
   min-width: 230px;
 }
@@ -23,18 +35,24 @@
   letter-spacing: 0.3px;
 }
 
-.inputline__input--phone,
-.inputline__input--email {
-  width: 280px;
+.inputline__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.inputline__input--contacts {
+  width: 222px;
   margin-top: 10px;
-  // position: relative;
-  // background: #f2f2f2;
-  // background-image: url("../img/icon-phone.svg"), linear-gradient(to right, #f2f2f2 222px, #e6e6e6 222px) cover;
-  // background:  no-repeat;
-  //  linear-gradient(to right, #f2f2f2 222px, #e6e6e6 222px);
-  // background-image: url("../img/icon-phone.svg");
-  // background-repeat: no-repeat;
-  // background-position-x: 100px;
+}
+
+.inputline__icon {
+  background-color: #e6e6e6;
+  width: 38px;
+  height: 38px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .inputline--contacts {

@@ -64,51 +64,65 @@
           <h2 class="feedback__heading">Контактная информация: </h2>
           <div class="feedback__content">
             <label class="feedback__group-item inputline inputline--contacts">
-              <span class="inputline__label">Контактный телефон*:</span>
-              <input type="tel" class="inputline__input inputline__input--phone" name="phone" placeholder="Введите телефон">
+              <span class="inputline__label inputline__label--phone">Контактный телефон*:</span>
+              <div class="inputline__wrapper">
+                <input type="tel" class="inputline__input inputline__input--contacts" name="phone" placeholder="Введите телефон">
+                <div class="inputline__icon">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                    <path fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                  </svg>
+                </div>
+              </div>
             </label>
-            <label class="feedback__group-item inputline inputline--contacts">
-              <span class="inputline__label inputline__label">Электронная почта*:</span>
-              <input type="email" class="inputline__input inputline__input--email" name="email" placeholder="Введите e-mail">
+            <label class="feedback__group-item feedback__group-item--email inputline inputline--contacts ">
+              <span class="inputline__label  inputline__label--email">Электронная почта*:</span>
+              <div class="inputline__wrapper">
+                <input type="email" class="inputline__input inputline__input--contacts" name="email" placeholder="Введите e-mail">
+                <div class="inputline__icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                  </svg>
+                </div>
+              </div>
             </label>
           </div>
         </fieldset>
         <fieldset class="feedback__group">
-          <h2 class="feedback__heading feedback__heading--checkline">Ваше общее впечатление:</h2>
-          <label class="feedback__group-item checkline">
+          <h2 class="feedback__heading feedback__heading--impressions">Ваше общее впечатление:</h2>
+          <label class="feedback__group-item checkline checkline--radio">
             <input type="radio" class="checkline__input checkline__input--radio visually-hidden" value="positive" name="impressions" checked>
-            <span class="checkline__label">Скорее положительное</span>
+            <span class="checkline__label checkline__label--radio">Скорее положительное</span>
           </label>
-          <label class="feedback__group-item checkline">
+          <label class="feedback__group-item checkline checkline--radio">
             <input type="radio" class="checkline__input checkline__input--radio visually-hidden" value="negative" name="impressions">
-            <span class="checkline__label">Скорее отрицательное</span>
+            <span class="checkline__label checkline__label--radio">Скорее отрицательное</span>
           </label>
-          <label class="feedback__group-item checkline">
+          <label class="feedback__group-item checkline checkline--last checkline--radio">
             <input type="radio" class="checkline__input checkline__input--radio visually-hidden" value="" name="impressions">
-            <span class="checkline__label">Скорее положительное</span>
+            <span class="checkline__label checkline__label--radio">Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
+        <fieldset class="feedback__group feeback__group--attraction">
+          <h2 class="feedback__heading feedback__heading--attraction">Посещенные достопримечательности:</h2>
+          <label class="feedback__group-item checkline checkline--checkbox">
+            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="devil's-bridge" name="visited-sights" checked>
+            <span class="checkline__label checkline__label--checkbox">Мост Дьявола</span>
+          </label>
+          <label class="feedback__group-item checkline checkline--checkbox">
+            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="slide-park" name="visited-sights" checked>
+            <span class="checkline__label checkline__label--checkbox">Слайд-парк</span>
+          </label>
+          <label class="feedback__group-item checkline checkline--checkbox">
+            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="bell-tower" name="visited-sights">
+            <span class="checkline__label checkline__label--checkbox">Гора-колокол</span>
+          </label>
+          <label class="feedback__group-item checkline checkline--small-margins">
+            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="red-rocks" name="visited-sights" checked>
+            <span class="checkline__label checkline__label--checkbox">Красные скалы</span>
           </label>
         </fieldset>
         <fieldset class="feedback__group">
-          <h2 class="feedback__heading feedback__heading--checkline">Посещенные достопримечательности:</h2>
-          <label class="feedback__group-item checkline">
-            <input type="checkbox" class="checkline__input checkline__input--box visually-hidden" value="devil's-bridge" name="visited-sights" checked>
-            <span class="checkline__label">Мост Дьявола</span>
-          </label>
-          <label class="feedback__group-item checkline">
-            <input type="checkbox" class="checkline__input chechline__input--box visually-hidden" value="slide-park" name="visited-sights" checked>
-            <span class="checkline__label">Слайд-парк</span>
-          </label>
-          <label class="feedback__group-item checkline">
-            <input type="checkbox" class="checkline__input checkline__input--box visually-hidden" value="bell-tower" name="visited-sights">
-            <span class="checkline__label">Гора-колокол</span>
-          </label>
-          <label class="feedback__group-item checkline">
-            <input type="checkbox" class="checkline__input checklint__input--box visually-hidden" value="red-rocks" name="visited-sights" checked>
-            <span class="checkline__label">Красные скалы</span>
-          </label>
-        </fieldset>
-        <fieldset class="feedback__group">
-          <h2 class="feedback__heading">Опишите свои эмоции:</h2>
+          <h2 class="feedback__heading feedback__heading--emotions">Опишите свои эмоции:</h2>
           <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback__button button" type="submit">Отправить отзыв</button>
