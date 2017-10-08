@@ -36,15 +36,15 @@
     </header>
     <main class="page-main">
       <div class="page-main__intro form-intro">
-        <img class="form-intro__text-img" src="img/text-sedona.svg" alt="Седона" width="230" height="39">
+        <!-- <img class="form-intro__text-img" src="img/text-sedona.svg" alt="Седона" width="230" height="39"> -->
       </div>
       <div class="page-main__banner form-banner">
         <h1 class="form-banner__heading heading">Оставьте свой отзыв</h1>
         <p class="form-banner__text text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="page-main__form feedback" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="feedback__group">
-          <h2 class="feedback__heading">Представьтесь:</h2>
+        <fieldset class="feedback__group feedback__group--name">
+          <h2 class="feedback__heading feedback__heading--name">Представьтесь:</h2>
           <div class="feedback__content">
             <label class="feedback__group-item inputline">
               <span class="inputline__label">Имя*</span>
@@ -60,11 +60,12 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="feedback__group">
-          <h2 class="feedback__heading">Контактная информация: </h2>
-          <div class="feedback__content">
+        <fieldset class="feedback__group feedback__group--contacts">
+          <h2 class="feedback__heading feedback__heading--contacts">Контактная информация: </h2>
+          <div class="feedback__content feedback__content--contacts">
             <label class="feedback__group-item inputline inputline--contacts">
               <span class="inputline__label inputline__label--phone">Контактный телефон*:</span>
+              <span class="inputline__label inputline__label--phone inputline__label--desktop">Телефон*:</span>
               <div class="inputline__wrapper">
                 <input type="tel" class="inputline__input inputline__input--contacts" name="phone" placeholder="Введите телефон">
                 <div class="inputline__icon">
@@ -87,7 +88,7 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="feedback__group">
+        <fieldset class="feedback__group feedback__group--impressions">
           <h2 class="feedback__heading feedback__heading--impressions">Ваше общее впечатление:</h2>
           <label class="feedback__group-item checkline checkline--radio">
             <input type="radio" class="checkline__input checkline__input--radio visually-hidden" value="positive" name="impressions" checked>
@@ -102,33 +103,38 @@
             <span class="checkline__label checkline__label--radio">Затрудняюсь ответить</span>
           </label>
         </fieldset>
-        <fieldset class="feedback__group feeback__group--attraction">
+        <fieldset class="feedback__group feedback__group--attraction">
           <h2 class="feedback__heading feedback__heading--attraction">Посещенные достопримечательности:</h2>
-          <label class="feedback__group-item checkline checkline--checkbox">
-            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="devil's-bridge" name="visited-sights" checked>
-            <span class="checkline__label checkline__label--checkbox">Мост Дьявола</span>
-          </label>
-          <label class="feedback__group-item checkline checkline--checkbox">
-            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="slide-park" name="visited-sights" checked>
-            <span class="checkline__label checkline__label--checkbox">Слайд-парк</span>
-          </label>
-          <label class="feedback__group-item checkline checkline--checkbox">
-            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="bell-tower" name="visited-sights">
-            <span class="checkline__label checkline__label--checkbox">Гора-колокол</span>
-          </label>
-          <label class="feedback__group-item checkline checkline--small-margins">
-            <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="red-rocks" name="visited-sights" checked>
-            <span class="checkline__label checkline__label--checkbox">Красные скалы</span>
-          </label>
+          <div class="feedback__group-item--wrapper">
+            <label class="feedback__group-item checkline checkline--checkbox checkline--bridge">
+              <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="devil's-bridge" name="visited-sights" checked>
+              <span class="checkline__label checkline__label--checkbox">Мост Дьявола</span>
+            </label>
+            <label class="feedback__group-item checkline checkline--checkbox checkline--slide-park">
+              <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="slide-park" name="visited-sights" checked>
+              <span class="checkline__label checkline__label--checkbox">Слайд-парк</span>
+            </label>
+            <label class="feedback__group-item checkline checkline--checkbox checkline--bell-tower">
+              <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="bell-tower" name="visited-sights">
+              <span class="checkline__label checkline__label--checkbox">Гора-колокол</span>
+            </label>
+            <label class="feedback__group-item checkline checkline--checkbox checkline--small-margins checkline--red-rocks">
+              <input type="checkbox" class="checkline__input checkline__input--checkbox visually-hidden" value="red-rocks" name="visited-sights" checked>
+              <span class="checkline__label checkline__label--checkbox">Красные скалы</span>
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="feedback__group">
+        <fieldset class="feedback__group feedback__group--emotions">
           <h2 class="feedback__heading feedback__heading--emotions">Опишите свои эмоции:</h2>
           <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
+        <div class="feedback__button--wrapper">
         <button class="feedback__button button" type="submit">Отправить отзыв</button>
+        <p class="feedback__message">* - Обязательные поля</p>
+      </div>
       </form>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--form">
       <a class="main-link footer__hashtag heading" href="#">#VisitSedona</a>
       <section class="footer__social social">
         <h3 class="social__heading visually-hidden">Ссылки на социальные сети</h3>
