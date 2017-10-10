@@ -52,7 +52,7 @@
 }
 
 .inputline__input--contacts {
-  width: 222px;
+  min-width: 222px;
   margin-top: 10px;
 }
 
@@ -87,7 +87,7 @@
   }
 
   .inputline__input--contacts {
-    width: 91%;
+    min-width: 91%;
     margin-right: 0;
   }
 
@@ -112,7 +112,8 @@
 
 @media (min-width: 1280px) {
   .inputline__input {
-    min-width: 294px;
+    min-width: 238px;
+    padding-left: 8px;
   }
 
   .inputline__input--name {
@@ -123,9 +124,9 @@
     width: 313px;
   }
 
-  .inputline__input--contacts {
-    min-width: 240px;
-  }
+  // .inputline__input--contacts {
+  //   min-width: 225px;
+  // }
 
   .inputline__label--phone {
     display: none;
