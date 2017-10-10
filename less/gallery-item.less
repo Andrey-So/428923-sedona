@@ -48,3 +48,20 @@
   bottom: 0;
   left: -23px;
 }
+
+@media (min-width: 768px) {
+  .gallery-item__image {
+    margin: 0;
+    // margin-top: 42px;
+  }
+
+  .gallery-item--wide {
+    width: 768px;
+    height: 480px;
+  }
+
+  .gallery-item__like::before,
+  .gallery-item__like::after {
+    display: none;
+  }
+}
