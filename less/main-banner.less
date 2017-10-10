@@ -1,5 +1,6 @@
 .main-banner {
-  position: relative;
+  // position: relative;
+
 }
 
 .main-banner__heading {
@@ -18,16 +19,14 @@
   width: 255px;
 }
 
-.main-banner::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 37px;
-    bottom: -41px;
-    background-image: url("../img/bg-triangle.svg");
+@media (min-width: 768px) {
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 203px;
 }
 
-@media (min-width: 768px) {
   .main-banner__heading {
     width: 450px;
     font-size: 21px;
@@ -36,16 +35,12 @@
 
   .main-banner__text {
     width: 500px;
-  }
-
-  .main-banner::after {
-    display: none;
+    padding-bottom: 50px;
   }
 }
 
 @media (min-width: 1280px) {
   .main-banner {
-    // background-color: #ffffff;
     min-height: 201px;
   }
 
