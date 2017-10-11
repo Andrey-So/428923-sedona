@@ -1,6 +1,9 @@
 .gallery__item {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery__player {
@@ -9,7 +12,7 @@
   justify-content: space-around;
   width: 100%;
   padding-top: 18px;
-  height: 390px;
+  min-height: 390px;
 }
 
 @media (min-width: 768px) {
@@ -23,7 +26,7 @@
     justify-content: space-between;
   }
 
-  // .gallery__item {
-  //   width: 50%;
-  // }
+  .gallery__item {
+    margin: 0;
+  }
 }
