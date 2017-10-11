@@ -1,3 +1,10 @@
+.to-find {
+  min-height: 287px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .to-find-form__heading {
   font-size: 21px;
   line-height: 26px;
@@ -10,16 +17,65 @@
   text-transform: uppercase;
   width: 280px;
   text-align: center;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5px;
+  padding-top: 19px;
+  padding-bottom:35px;
 }
 
 .to-find-form__link {
-width: 280px;
-height: 44px;
-padding-top: 15px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 35px;
+  width: 280px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
+}
+
+@media (min-width: 768px) {
+  .to-find {
+    min-height:318px;
+  }
+
+  .to-find-form__heading {
+    font-size: 30px;
+    padding-top: 55px;
+  }
+
+  .to-find-form__text {
+    width: 410px;
+    padding-top: 30px;
+    padding-bottom: 44px;
+    // margin-top: 26px;
+  }
+
+  .to-find-form__link {
+    width: 458px;
+    // margin-top: 42px;
+    height: 43px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .to-find-form__link {
+    // margin-top: 47px;
+  }
+
+  .to-find {
+    min-height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .to-find-form__heading {
+    padding-top: 51px;
+  }
+
+  .to-find-form__link {
+    padding-top: 14px;
+    // margin-bottom: 30px;
+  }
 }

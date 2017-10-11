@@ -4,8 +4,87 @@
   margin-bottom: 46px;
 }
 
+.checkline--last {
+  margin-bottom: 19px;
+}
+
 .checkline__label {
   font-size: 18px;
   font-weight: bold;
   text-align: left;
+}
+
+.checkline__label--radio {
+  position: relative;
+}
+
+.checkline__label--radio::before,
+.checkline__label--checkbox::before {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+  left: -77px;
+  top: -15px;
+}
+
+.checkline--checkbox {
+  margin-bottom: 57px;
+}
+
+.checkline__input--radio:checked+.checkline__label--radio::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.checkline__input--radio:not(checked)+.checkline__label--radio::before {
+  background-image: url("../img/radio-off.svg");
+}
+
+.checkline__label--checkbox {
+  position: relative;
+}
+
+.checkline__input--checkbox:checked+.checkline__label--checkbox::before {
+  background-image: url("../img/checkbox-on.png");
+}
+
+.checkline__input--checkbox:not(checked)+.checkline__label--checkbox::before {
+  background-image:url("../img/checkbox-off.png ");
+}
+
+.checkline--small-margins {
+  margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .checkline--radio {
+    margin-left: 37px;
+    margin-bottom: 55px;
+  }
+
+  .checkline--checkbox {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 45px;
+    width: 161px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .checkline--bridge {
+    order: 0;
+  }
+
+  .checkline--slide-park {
+    order: 2;
+  }
+
+  .checkline--bell-tower {
+    order: 1;
+  }
+
+  .checkline--red-rocks {
+    order: 3;
+    margin-left: -22px;
+  }
 }

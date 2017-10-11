@@ -12,17 +12,43 @@
   position: absolute;
   content: "";
   width: 320px;
-  height: 26px;
-  bottom: 0;
+  height: 28px;
+  bottom: -1px;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-size: 320px 28px;
 }
 
 .main-intro__text-img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 88px;
+  padding-top: 88px;
+  width: 281px;
+  height:218px;
 }
 
-.main-intro__triangle-img {
-  margin-top:57px;
+@media (min-width: 768px) {
+  .main-intro__text-img {
+    width:500px;
+    height: 350px;
+    padding-top: 76px;
+    padding-bottom: 95px;
+  }
+
+  .main-intro::after {
+    width: 768px;
+    height: 57px;
+    background-image: url("../img/intro-triangle.svg");
+    background-size: 768px 57px;
+    background-position: 10px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-intro {
+    background-color: #ffffff;
+  }
+
+  .main-intro__text-img {
+    padding-top: 78px;
+  }
 }
