@@ -7,6 +7,10 @@
   padding-bottom: 9px;
 }
 
+.feedback__group--attraction {
+  padding-bottom: 0;
+}
+
 .feedback__heading {
   margin: 0;
   font-size: 18px;
@@ -17,8 +21,22 @@
   letter-spacing: 0.2px;
 }
 
-.feedback__heading--checkline {
+.feedback__heading--attraction {
+  padding-top: 19px;
+  margin-left: 42px;
+  padding-bottom: 11px;
+  width: 240px;
+  margin-top: 0;
+}
+
+.feedback__heading--impressions {
+  margin-top: 21px;
+  margin-left: -59px;
   margin-bottom: 38px;
+}
+
+.feedback__heading--emotions {
+  margin-bottom: 18px;
 }
 
 .feedback__content {
@@ -37,15 +55,20 @@
   margin-right: auto;
 }
 
+.feedback__group-item--email {
+  margin-top: 13px;
+}
+
 .feedback__textarea {
   display: flex;
   background-color: #f2f2f2;
   width: 279px;
-  height: 160px;
+  height: 156px;
   border: none;
   font-family: inherit;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 42px;
 }
 
 .feedback__textarea::-webkit-input-placeholder {
@@ -61,4 +84,304 @@
   height: 58px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.feedback__message {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .feedback__group--name {
+    order: 1;
+  }
+
+  .feedback__group--contacts {
+    order: 3;
+  }
+
+  .feedback__group--impressions {
+    order: 0;
+  }
+
+  .feedback__group--attraction {
+    order: 4;
+  }
+
+  .feedback__group--emotions {
+    order: 5;
+  }
+
+  .feedback__button--wrapper {
+    order: 6;
+  }
+
+  .feedback__group {
+    border: none;
+  }
+
+  .feedback__group--impressions {
+    width: 330px;
+    position: relative;
+  }
+
+  .feedback__group--impressions::before {
+    position: absolute;
+    content: "";
+    height: 292px;
+    width: 1px;
+    background-color: #dbdbdb;
+    top: 61px;
+    left: 383px;
+  }
+
+  .feedback__group--contacts {
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback__heading {
+    text-align: left;
+  }
+
+  .feedback__heading--impressions {
+    font-size: 21px;
+    margin-left: 58px;
+    margin-top: 56px;
+    margin-bottom: 74px;
+  }
+
+  .feedback__heading--name {
+    font-size: 21px;
+    margin-left: 26px;
+    margin-top: 56px;
+    margin-bottom: 37px;
+  }
+
+  .feedback__heading--contacts {
+    width: 100%;
+    font-size: 21px;
+    text-align: center;
+    margin: 0;
+    margin-top: 7px;
+    position: relative;
+  }
+
+  .feedback__heading--contacts::before,
+  .feedback__heading--attraction::before,
+  .feedback__heading--contacts::after,
+  .feedback__heading--attraction::after {
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .feedback__heading--contacts::before {
+    top: 12px;
+    left: 0;
+  }
+
+  .feedback__heading--contacts::after {
+    top: 12px;
+    right: 0;
+  }
+
+  .feedback__group-item {
+    margin-left: 27px;
+    align-items: left;
+  }
+
+  .feedback__group-item--email {
+    margin-top: 4px;
+  }
+
+  .feedback__group--attraction {
+    width: 100%;
+  }
+
+  .feedback__heading--attraction,
+  .feedback__heading--emotions {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 9px;
+    position: relative;
+  }
+
+  .feedback__heading--attraction::before {
+    top: 44px;
+    left: -185px;
+  }
+
+  .feedback__heading--attraction::after {
+    top: 44px;
+    right: -185px;
+  }
+
+  .feedback__group-item--wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 133px;
+    margin-top: 26px;
+    height: 200px;
+    width: 525px;
+  }
+
+  .feedback__group--emotions {
+    width: 100%;
+  }
+
+  .feedback__heading--emotions {
+    margin-top: 0;
+  }
+
+  .feedback__textarea {
+    width: 84%;
+    height: 155px;
+    margin-top: 57px;
+  }
+
+  .feedback__button {
+    margin: 0;
+    margin-left: 60px;
+    margin-top: 8px;
+    width: 324px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .feedback__button--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+  }
+
+  .feedback__message {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .feedback__group--impressions {
+    margin-left: 64px;
+  }
+
+  .feedback__heading--impressions {
+    margin-top: 42px;
+    margin-left: 134px;
+  }
+
+  .feedback__group--impressions::before {
+    top: 48px;
+    left: 536px;
+  }
+
+  .feedback__group--name {
+    margin: 0;
+    margin-left: 39px;
+    margin-top: 3px;
+  }
+
+  .feedback__group-item {
+    width: 414px;
+  }
+
+  .feedback__heading--contacts {
+    margin-top: 5px;
+  }
+
+  .feedback__heading--contacts::after,
+  .feedback__heading--contacts::before,
+  .feedback__heading--attraction::before,
+  .feedback__heading--attraction::after {
+    width: 279px;
+  }
+
+  .feedback__heading--contacts::before {
+    left: 120px;
+  }
+
+  .feedback__heading--contacts::after {
+    right: 120px;
+  }
+
+  .feedback__heading--attraction::before, {
+    left: -340px;
+  }
+
+  .feedback__heading--attraction::after {
+    right: -340px;
+  }
+
+  .feedback__heading--emotions {
+    position: relative;
+  }
+
+  .feedback__heading--emotions::before {
+    position: absolute;
+    content: "";
+    width: 279px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 12px;
+    left: -340px;
+  }
+
+  .feedback__heading--emotions::after {
+    position: absolute;
+    content: "";
+    width: 279px;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 12px;
+    right: -340px;
+  }
+
+  .feedback__content--contacts {
+    width: 89%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    align-items: center;
+    margin-left: 97px;
+  }
+
+  .feedback__group--contacts {
+    width: 100%;
+  }
+
+  .feedback__group-item--wrapper {
+    flex-direction: row;
+    margin-left: 102px;
+    width: 90%;
+    height: 109px;
+  }
+
+  .feedback__textarea {
+    width: 80%;
+    padding-left: 13px;
+    padding-top: 7px;
+    height: 151px;
+    width: 79%;
+  }
+
+  .feedback__button {
+    margin-left: 120px;
+    width: 480px;
+  }
+
+  .feedback__message {
+    margin-right: 24px;
+  }
 }

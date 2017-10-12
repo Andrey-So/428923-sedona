@@ -1,8 +1,13 @@
+.main-banner {
+  // position: relative;
+
+}
+
 .main-banner__heading {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  padding-top: 40px;
   width: 255px;
 }
 
@@ -12,4 +17,34 @@
   margin-right: auto;
   margin-top: 28px;
   width: 255px;
+}
+
+@media (min-width: 768px) {
+.main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 203px;
+}
+
+  .main-banner__heading {
+    width: 450px;
+    font-size: 21px;
+    padding-top: 46px;
+  }
+
+  .main-banner__text {
+    width: 500px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-banner {
+    min-height: 201px;
+  }
+
+  .main-banner__heading {
+    padding-top: 45px;
+  }
 }
