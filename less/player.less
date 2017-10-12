@@ -16,11 +16,13 @@
   height: 111px;
   background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 45px, #f2f2f2 45px);
   display: flex;
-  // flex-direction: column;
-  width: 350px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  flex-wrap: wrap;
 }
 
-.player__timeline {
+.player__range-input {
   width: 280px;
   height: 45px;
   display: flex;
@@ -42,20 +44,40 @@
   justify-content: space-between;
 }
 
-.player__line {
-  width: 235px;
-  height: 3px;
+.player__replay-button {
+  height: 25px;
+  flex-grow: 0.45;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
-.player__circle {
-  width: 10px;
-  height: 10px;
+.player__cc-button {
+  width: 32px;
+  height: 25px;
+  flex-shrink: 1;
+  margin-left: 80px;
+  margin-top: 2px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.player__cc-icon {
   position: absolute;
-  left: 58px;
+  top: 0;
+  right: 0;
 }
 
-.player__replay {
-  flex-grow: 0.7;
+.player__fullscreen-button {
+  height: 25px;
+  flex-shrink: 1;
+  margin-right: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
 }
 
 @media (min-width: 768px) {
@@ -82,22 +104,61 @@
 
   .player__wrapper {
     top: 651px;
-    left:60px;
+    left: 60px;
     width: 648px;
     height: 93px;
     background-color: rgba(0, 0, 0, 0.6);
     background-image: none;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  .player__replay,
-  .player__cc,
-  .player__fullscreen {
-    fill: rgba(255, 255, 255, 0.8);
+  .player__replay-icon,
+  .player__cc-icon,
+  .player__fullscreen-icon {
+    fill: rgba(255, 255, 255, 1);
   }
+
+  .player__replay-button {
+    order: -1;
+    flex-grow: 0;
+    padding: 0;
+  }
+
+  .player__cc-button {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .player__fullscreen-button {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .player__range-input {
+    width: 389px;
+  }
+
 }
 
 @media (min-width: 1200px) {
   .player {
-  padding-top: 71px; 
-}
+    padding-top: 71px;
+  }
+
+  .player__image {
+    width: 800px;
+  }
+
+  .player__wrapper {
+    top: 655px;
+    left: 200px;
+    width: 800px;
+  }
+
+  .player__range-input {
+    width: 540px;
+  }
 }
