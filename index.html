@@ -23,7 +23,11 @@
         </nav>
       </div>
       <a class="main-link page-header__logo" href="#">
-        <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+        <picture class="page-header__logo-img">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
       <button class="page-header__toggler" type="button">
           <svg class="page-header__icon" fill="#81b3d2" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -51,7 +55,11 @@
               <p class="feature-block__counter text">— №1 —</p>
               <p class="feature-block__text feature-block__text--triangle-top text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="feature-block__image" src="img/main-city-mobile@1x.jpg" alt="Вид на Седону">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
+              <img class="feature-block__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Вид на Седону">
+            </picture>
           </div>
           <div class="feature-block__wrapper feature-block__wrapper--items">
           <section class="feature-block__item feature-block__item--first">
@@ -74,7 +82,11 @@
             <p class="feature-block__counter text">— №2 —</p>
             <p class="feature-block__text feature-block__text--text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
          </div>
-          <img class="feature-block__image" src="img/photo-bridge-mobile@1x.jpg" alt="Вид на мост дьявола" width="320" height="260">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img class="feature-block__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Вид на мост дьявола">
+          </picture>
         </section>
         <div class="features__wrapper feature__wrapper--bottom">
           <section class="features__block feature-block feature-block--bottom feature-block--bottom-line">
@@ -101,11 +113,15 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Аризоны</h2>
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="Карта Аризоны" height="350" width="320">
-        <svg class="map__marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
-          <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
-          <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
-        </svg>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта Аризоны">
+          <svg class="map__marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+          </svg>
+        </picture>
       </section>
     </main>
     <footer class="footer">
