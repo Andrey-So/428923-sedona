@@ -23,7 +23,11 @@
         </nav>
       </div>
       <a class="main-link page-header__logo" href="#">
-        <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+        <picture class="page-header__logo-img">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+        </picture>
       </a>
       <button class="page-header__toggler" type="button">
         <svg class="page-header__icon" fill="#81b3d2" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -53,7 +57,11 @@
            </div>
         </div>
         <div class="gallery__item gallery-item">
-          <img class="gallery-item__image" src="img/photo-cactus-mobile@1x.jpg" alt="Изображение фотогалереи" width="280" height="280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"  srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+            <img class="gallery-item__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Изображение фотогалереи">
+          </picture>
           <div class="gallery-item__caption">
             <div class="gallery-item__title">
               <b class="gallery-item__name">Местная растительность</b>
@@ -63,7 +71,11 @@
           </div>
         </div>
         <div class="gallery__item gallery-item">
-          <img class="gallery-item__image" src="img/photo-roads-mobile@1x.jpg" alt="Изображение фотогалереи" width="280" height="280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+            <img class="gallery-item__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Изображение фотогалереи">
+          </picture>
           <div class="gallery-item__caption gallery-item__caption--dark">
             <div class="gallery-item__title">
               <b class="gallery-item__name">Дорога на север</b>
@@ -73,20 +85,28 @@
           </div>
         </div>
         <div class="gallery__item gallery-item">
-          <img class="gallery-item__image" src="img/photo-bridge-mobile@1x.jpg" alt="Изображение фотогалереи" width="280" height="280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="gallery-item__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Изображение фотогалереи">
+          </picture>
           <div class="gallery-item__caption">
             <div class="gallery-item__title">
               <b class="gallery-item__name">Мост дьявола</b>
               <p class="gallery-item__author">Автор фото: Антон</p>
             </div>
-            <button class="gallery-item__like" href="#">254</>
+            <button class="gallery-item__like" href="#">254</button>
           </div>
         </div>
       </div>
       <div class="gallery__player player">
         <b class="player__title heading">Все еще сомневаетесь?</b>
         <p class="player__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="player__image" src="img/video-mobile@1x.jpg" width="320" height="200">
+        <picture class="player__image">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video@tablet@2x.jpg 2x">
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео Седоны">
+        </picture>
         <div class="player__wrapper">
           <div class="player__range-input range-input">
             <div class="range-input__line">
