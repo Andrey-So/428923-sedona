@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class="page-body">
+      <div class="main-wrapper">
     <svg style="display: none">
       <symbol viewBox="0 0 22.199 22.199" id="main-nav__icon">
        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
@@ -73,7 +74,16 @@
         </div>
       </header>
       <main class="page-main">
-      <div class="page-main__intro form-intro"></div>
+      <div class="page-main__intro form-intro">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp, img/bg-back-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
+          <img class="main-intro__img main-intro__img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x">
+        </picture>
+      </div>
       <div class="page-main__banner form-banner">
         <h1 class="form-banner__heading heading">Фото и видео</h1>
         <p class="form-banner__text form-banner__text--photo text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -213,5 +223,6 @@
         </svg>
       </a>
     </footer>
+      </div>
   </body>
 </html>

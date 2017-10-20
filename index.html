@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class="page-body">
-
+    <div class="main-wrapper">
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -129,13 +129,15 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__intro main-intro">
+      <div class="page-main__intro">
         <picture>
-          <img src="img/back-mobile.jpg" width="320" height="390">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp, img/bg-back-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
+          <img class="page-main__intro-img" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x">
         </picture>
-        <!-- <svg class="main-intro__text-img">
-          <use xlink:href="#text-sedona-index"></use>
-        </svg> -->
       </div>
       <div class="page-main__banner main-banner">
         <h1 class="main-banner__heading heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -235,10 +237,6 @@
           <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
           <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта Аризоны">
-          <svg class="map__marker" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
-            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
-            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
-          </svg>
         </picture>
       </section>
     </main>
@@ -268,5 +266,6 @@
         </svg>
       </a>
     </footer>
+  </div>
   </body>
 </html>
