@@ -1,6 +1,6 @@
 .inputline__input {
   background-color: @bg-lightgrey;
-  min-width: 171px;
+  width: 171px;
   height: 56px;
   border: none;
   font-size: 18px;
@@ -8,7 +8,17 @@
   color: #000000;
   font-weight: bold;
   margin-left: 13px;
+}
 
+.inputline__input:hover {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.inputline__input:active,
+.inputline__input:focus {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
 }
 
 .inputline__label {

@@ -44,7 +44,7 @@
   justify-content: space-between;
 }
 
-.player__replay-button {
+.player__button--replay {
   height: 25px;
   flex-grow: 0.45;
   border: none;
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.player__cc-button {
+.player__button--cc {
   width: 32px;
   height: 25px;
   flex-shrink: 1;
@@ -64,19 +64,32 @@
   position: relative;
 }
 
-.player__cc-icon {
+.player__icon--cc {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.player__fullscreen-button {
+.player__button--fullscreen {
   height: 25px;
   flex-shrink: 1;
   margin-right: 16px;
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.player__button {
+  fill: #5c6870;
+  // outline: none;
+}
+
+.player__button:hover {
+  fill: #333333;
+}
+
+.player__button:active {
+  fill: #c1c1c1;
 }
 
 @media (min-width: 768px) {
@@ -115,25 +128,25 @@
     justify-content: space-around;
   }
 
-  .player__replay-icon,
-  .player__cc-icon,
-  .player__fullscreen-icon {
+  .player__icon,
+  .player__icon,
+  .player__icon {
     fill: rgba(255, 255, 255, 1);
   }
 
-  .player__replay-button {
+  .player__button--replay {
     order: -1;
     flex-grow: 0;
     padding: 0;
   }
 
-  .player__cc-button {
+  .player__button--cc {
     flex-shrink: 0;
     margin: 0;
     padding: 0;
   }
 
-  .player__fullscreen-button {
+  .player__button--fullscreen {
     flex-shrink: 0;
     margin: 0;
     padding: 0;
