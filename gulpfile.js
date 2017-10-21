@@ -72,6 +72,14 @@ gulp.task("build", function (done) {
   );
 });
 
+gulp.task("sprite", function () {
+  return gulp.src("img/icon-*.svg")
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
+ });
 
 gulp.task("serve", ["style"], function() {
   server.init({
