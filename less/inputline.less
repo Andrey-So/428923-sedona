@@ -1,3 +1,8 @@
+.inputline--input {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
 .inputline__input {
   background-color: @bg-lightgrey;
   width: 171px;
@@ -19,6 +24,7 @@
 .inputline__input:focus {
   background-color: #ffffff;
   outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
 }
 
 .inputline__label {
@@ -88,6 +94,10 @@
     padding-top: 22px;
   }
 
+  .inputline--input {
+    margin-left: 85px;
+  }
+
   .inputline__input {
     min-width: 158px;
     margin-right: 14px;
@@ -125,6 +135,10 @@
 }
 
 @media (min-width: 1200px) {
+  .inputline--input {
+    margin-left: 24px;
+  }
+
   .inputline__input {
     min-width: 290px;
     padding-left: 25px;
@@ -133,7 +147,6 @@
   .inputline__input--name {
     min-width: 330px;
     padding-left: 23px;
-    // margin-left: 20px;
   }
 
   .inputline__wrapper {

@@ -4,8 +4,14 @@
   margin-bottom: 46px;
 }
 
+.checkline--radio {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 29px;
+}
+
 .checkline--last {
-  margin-bottom: 19px;
+  padding-bottom: 19px;
 }
 
 .checkline__label {
@@ -29,48 +35,86 @@
 }
 
 .checkline--checkbox {
-  margin-bottom: 57px;
+  margin: 0;
+  margin-bottom: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .checkline__input--radio:checked+.checkline__label--radio::before {
-  background-image: url("../img/radio-on.svg");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#f2f2f2'></circle><circle r='11' cx='28' cy='28' fill='#333333'></circle></svg>");
+}
+
+.checkline__input--radio:checked:hover+.checkline__label--radio::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#e5e5e5'></circle><circle r='11' cx='28' cy='28' fill='#333333'></circle></svg>");
+}
+
+.checkline__input--radio:checked:active+.checkline__label--radio::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#d5d5d5'></circle><circle r='11' cx='28' cy='28' fill='#a4a4a4'></circle></svg>");
 }
 
 .checkline__input--radio:not(checked)+.checkline__label--radio::before {
-  background-image: url("../img/radio-off.svg");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#f2f2f2'></circle></svg>");
 }
+
+.checkline__input--radio:not(checked):hover+.checkline__label--radio::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#e5e5e5'></circle></svg>");
+}
+
+.checkline__input--radio:not(checked):active+.checkline__label--radio::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#d5d5d5'></circle></svg>");
+}
+
 
 .checkline__label--checkbox {
   position: relative;
 }
 
 .checkline__input--checkbox:checked+.checkline__label--checkbox::before {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#f2f2f2'/><polyline points='17,27 26,34 38,22' stroke='#333333' stroke-width='5' fill='none'/></svg>");
+}
+
+.checkline__input--checkbox:checked:hover+.checkline__label--checkbox::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#e5e5e5'/><polyline points='17,27 26,34 38,22' stroke='#333333' stroke-width='5' fill='none'/></svg>");
+}
+
+.checkline__input--checkbox:checked:active+.checkline__label--checkbox::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#d5d5d5'/><polyline points='17,27 26,34 38,22' stroke='#a4a4a4' stroke-width='5' fill='none'/></svg>");
 }
 
 .checkline__input--checkbox:not(checked)+.checkline__label--checkbox::before {
-  background-image:url("../img/checkbox-off.png ");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#f2f2f2'></rect></svg>");
+}
+
+.checkline__input--checkbox:not(checked):hover+.checkline__label--checkbox::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#e5e5e5'></rect></svg>");
+}
+
+.checkline__input--checkbox:not(checked):active+.checkline__label--checkbox::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#d5d5d5'></rect></svg>");
 }
 
 .checkline--small-margins {
-  margin-bottom: 17px;
+  margin-bottom: -3px;
 }
 
 @media (min-width: 768px) {
+  .checkline {
+    padding-left: 101px;
+  }
+
   .checkline--radio {
     margin-left: 37px;
-    margin-bottom: 55px;
+    margin-bottom: 9px;
   }
 
   .checkline--checkbox {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 45px;
+    margin-bottom: 24px;
     width: 161px;
   }
-}
 
-@media (min-width: 1200px) {
   .checkline--bridge {
     order: 0;
   }
@@ -85,6 +129,17 @@
 
   .checkline--red-rocks {
     order: 3;
-    margin-left: -22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkline--checkbox {
+    margin-left: -4px;
+    margin-bottom: 22px;
+  }
+
+  .checkline--red-rocks {
+    margin-left: 0;
+    padding-left: 80px;
   }
 }

@@ -31,8 +31,8 @@
 
 .feedback__heading--impressions {
   margin-top: 21px;
-  margin-left: -59px;
-  margin-bottom: 38px;
+  // margin-left: -59px;
+  margin-bottom: 20px;
 }
 
 .feedback__heading--emotions {
@@ -46,7 +46,7 @@
 
 .feedback__group-item {
   margin-top: 20px;
-  width: 280px;
+  width: 222px;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -90,6 +90,7 @@
 .feedback__textarea:focus {
   background-color: #ffffff;
   outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
 }
 
 .feedback__textarea::-webkit-input-placeholder {
@@ -161,6 +162,7 @@
     width: 648px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 44px;
   }
 
   .feedback__heading {
@@ -171,13 +173,13 @@
     font-size: 21px;
     margin-left: 58px;
     margin-top: 56px;
-    margin-bottom: 74px;
+    margin-bottom: 56px;
   }
 
   .feedback__heading--name {
     font-size: 21px;
-    margin-left: 26px;
-    margin-top: 56px;
+    margin-left: 85px;
+    margin-top: 55px;
     margin-bottom: 37px;
   }
 
@@ -192,8 +194,10 @@
 
   .feedback__heading--contacts::before,
   .feedback__heading--attraction::before,
+  .feedback__heading--emotions::before,
   .feedback__heading--contacts::after,
-  .feedback__heading--attraction::after {
+  .feedback__heading--attraction::after,
+  .feedback__heading--emotions::after {
     position: absolute;
     content: "";
     width: 125px;
@@ -235,6 +239,16 @@
     position: relative;
   }
 
+  .feedback__heading--emotions::before {
+    top: 12px;
+    left: -185px;
+  }
+
+  .feedback__heading--emotions::after {
+    top: 12px;
+    right: -185px;
+  }
+
   .feedback__heading--attraction::before {
     top: 44px;
     left: -185px;
@@ -247,12 +261,16 @@
 
   .feedback__group-item--wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-left: 133px;
-    margin-top: 26px;
-    height: 200px;
+    margin-top: 25px;
+    min-height: 175px;
     width: 525px;
+  }
+
+  .feedback__group--attraction {
+    padding-bottom: 36px;
   }
 
   .feedback__group--emotions {
@@ -301,6 +319,10 @@
   .feedback__heading--impressions {
     margin-top: 42px;
     margin-left: 134px;
+  }
+
+  .feedback__heading--name {
+    margin-left: 24px;
   }
 
   .feedback__group--impressions::before {
@@ -386,7 +408,7 @@
     flex-direction: row;
     margin-left: 102px;
     width: 90%;
-    height: 109px;
+    min-height: initial;
   }
 
   .feedback__textarea {
