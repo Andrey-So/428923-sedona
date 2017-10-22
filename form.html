@@ -84,7 +84,7 @@
           <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
-          <img class="page-main__intro-img page-main__intro-img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x">
+          <img class="page-main__intro-img page-main__intro-img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Седона">
         </picture>
       </div>
       <div class="page-main__banner form-banner">
@@ -97,11 +97,11 @@
           <div class="feedback__content">
             <label class="feedback__group-item inputline inputline--input">
               <span class="inputline__label">Имя*:</span>
-              <input type="text" class="inputline__input inputline__input--name" name="name" placeholder="Петр">
+              <input type="text" class="inputline__input inputline__input--name" name="name" placeholder="Петр" required>
             </label>
             <label class="feedback__group-item inputline inputline--input">
               <span class="inputline__label">Фамилия*:</span>
-              <input type="text" class="inputline__input" name="surname" placeholder="Иванов">
+              <input type="text" class="inputline__input" name="surname" placeholder="Иванов" required>
             </label>
             <label class="feedback__group-item inputline inputline--input">
               <span class="inputline__label">Отчество:</span>
@@ -116,7 +116,7 @@
               <span class="inputline__label inputline__label--phone">Контактный телефон*:</span>
               <span class="inputline__label inputline__label--phone inputline__label--desktop">Телефон*:</span>
               <div class="inputline__wrapper">
-                <input type="tel" class="inputline__input inputline__input--contacts" name="phone" placeholder="Введите телефон">
+                <input type="tel" class="inputline__input inputline__input--contacts" name="phone" placeholder="Введите телефон" required>
                 <div class="inputline__icon">
                   <svg width="18" height="18">
                     <use xlink:href="#icon-phone"></use>
@@ -127,7 +127,7 @@
             <label class="feedback__group-item feedback__group-item--email inputline inputline--contacts ">
               <span class="inputline__label  inputline__label--email">Электронная почта*:</span>
               <div class="inputline__wrapper">
-                <input type="email" class="inputline__input inputline__input--contacts" name="email" placeholder="Введите e-mail">
+                <input type="email" class="inputline__input inputline__input--contacts" name="email" placeholder="Введите e-mail" required>
                 <div class="inputline__icon">
                   <svg width="16" height="16">
                     <use xlink:href="#icon-mail"></use>
@@ -188,12 +188,12 @@
       <section class="footer__social social">
         <h3 class="social__heading visually-hidden">Ссылки на социальные сети</h3>
         <a class="main-link social__link" href="#">Twitter
-          <svg width="19" heigth="15">
+          <svg width="17.5" height="15">
             <use class="social__img" xlink:href="#icon-twitter"></use>
           </svg>
         </a>
         <a class="main-link social__link" href="#">Facebook
-          <svg width="8.5" heigth="15">
+          <svg width="8.5" height="18">
             <use class="social__img" xlink:href="#icon-facebook"></use>
           </svg>
         </a>

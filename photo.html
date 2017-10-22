@@ -81,7 +81,7 @@
           <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
-          <img class="page-main__intro-img page-main__intro-img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x">
+          <img class="page-main__intro-img page-main__intro-img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Седона">
         </picture>
       </div>
       <div class="page-main__banner form-banner">
@@ -105,7 +105,7 @@
                 <b class="gallery-item__name">Неродные просторы</b>
                 <p class="gallery-item__author">Автор фото: Борис</p>
               </div>
-              <button class="gallery-item__like gallery-item__like--wide"  href="#">1350</button>
+              <button class="gallery-item__like gallery-item__like--wide">1350</button>
            </div>
         </div>
         <div class="gallery__item gallery-item">
@@ -124,7 +124,7 @@
               <b class="gallery-item__name">Местная растительность</b>
               <p class="gallery-item__author">Автор фото: Сергей</p>
             </div>
-            <button class="gallery-item__like" href="#">143</button>
+            <button class="gallery-item__like">143</button>
           </div>
         </div>
         <div class="gallery__item gallery-item">
@@ -143,7 +143,7 @@
               <b class="gallery-item__name">Дорога на север</b>
               <p class="gallery-item__author">Автор фото: Петр</p>
             </div>
-            <button class="gallery-item__like" href="#">96</button>
+            <button class="gallery-item__like">96</button>
           </div>
         </div>
         <div class="gallery__item gallery-item">
@@ -162,7 +162,7 @@
               <b class="gallery-item__name">Мост дьявола</b>
               <p class="gallery-item__author">Автор фото: Антон</p>
             </div>
-            <button class="gallery-item__like" href="#">254</button>
+            <button class="gallery-item__like">254</button>
           </div>
         </div>
       </div>
@@ -176,6 +176,7 @@
           <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img class="player__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео Седоны">
+        </picture>
           <div class="player__wrapper">
               <div class="player__range-input range-input">
                 <div class="range-input__line">
@@ -202,35 +203,34 @@
                   </svg>
                 </button>
             </div>
-        </picture>
       </div>
     </main>
     <footer class="footer">
-      <a class="main-link footer__hashtag heading" href="#">#VisitSedona</a>
-      <section class="footer__social social">
-        <h3 class="social__heading visually-hidden">Ссылки на социальные сети</h3>
-        <a class="main-link social__link" href="#">Twitter
-          <svg width="19" heigth="15">
-            <use class="social__img" xlink:href="#icon-twitter"></use>
+        <a class="main-link footer__hashtag heading" href="#">#VisitSedona</a>
+        <section class="footer__social social">
+          <h3 class="social__heading visually-hidden">Ссылки на социальные сети</h3>
+          <a class="main-link social__link" href="#">Twitter
+            <svg width="17.5" height="15">
+              <use class="social__img" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="main-link social__link" href="#">Facebook
+            <svg width="8.5" height="18">
+              <use class="social__img" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="main-link social__link" href="#">YouTube
+            <svg width="20" height="14">
+              <use class="social__img" xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </section>
+        <a class="main-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg width="27" height="34">
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
-        <a class="main-link social__link" href="#">Facebook
-          <svg width="8.5" heigth="15">
-            <use class="social__img" xlink:href="#icon-facebook"></use>
-          </svg>
-        </a>
-        <a class="main-link social__link" href="#">YouTube
-          <svg width="20" height="14">
-            <use class="social__img" xlink:href="#icon-youtube"></use>
-          </svg>
-        </a>
-      </section>
-      <a class="main-link footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-        <svg width="27" height="34">
-          <use xlink:href="#icon-htmlacademy"></use>
-        </svg>
-      </a>
-    </footer>
+      </footer>
       </div>
   </body>
 </html>
