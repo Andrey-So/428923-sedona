@@ -47,6 +47,7 @@
     "node": "8.2"
   },
   "dependencies": {
-    "cwebp": "^2.0.2"
+    "cwebp": "^2.0.2",
+    "normalize.css": "^7.0.0"
   }
 }

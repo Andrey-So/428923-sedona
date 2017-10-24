@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - отзывы</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -78,7 +79,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__intro page-main__intro--low">
-        <picture>
+        <picture class="page-main__image-wrapper page-main__image-wrapper--low">
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp, img/bg-back-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
@@ -124,7 +125,7 @@
                 </div>
               </div>
             </div>
-            <div class="feedback__group-item feedback__group-item--email inputline inputline--contacts ">
+            <div class="feedback__group-item feedback__group-item--email inputline inputline--contacts inputline--email">
               <label class="inputline__label  inputline__label--email">Электронная почта*:</label>
               <div class="inputline__wrapper">
                 <input type="email" class="inputline__input inputline__input--contacts" name="email" placeholder="Введите e-mail" required>

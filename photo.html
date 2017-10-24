@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - отзывы</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -74,17 +75,17 @@
         </div>
       </header>
       <main class="page-main">
-      <div class="page-main__intro page-main__intro--low">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp, img/bg-back-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
-          <img class="page-main__intro-img page-main__intro-img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Седона">
-        </picture>
-      </div>
-      <div class="page-main__banner photo-banner">
+        <div class="page-main__intro page-main__intro--low">
+          <picture class="page-main__image-wrapper page-main__image-wrapper--low">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.webp 1x, img/bg-back-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.webp, img/bg-back-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-back-mobile@1x.webp, img/bg-back-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg, img/bg-back-tablet@2x.jpg 2x">
+            <img class="page-main__intro-img page-main__intro-img--low" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Седона">
+          </picture>
+        </div>
+        <div class="page-main__banner photo-banner">
         <h1 class="photo-banner__heading heading">Фото и видео</h1>
         <p class="photo-banner__text photo-banner__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>

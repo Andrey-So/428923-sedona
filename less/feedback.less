@@ -11,6 +11,10 @@
   padding-bottom: 9px;
 }
 
+.feedback__group--contacts {
+  padding-bottom: 12px;
+}
+
 .feedback__heading {
   margin: 0;
   font-size: 18px;
@@ -23,20 +27,20 @@
 
 .feedback__heading--attraction {
   padding-top: 19px;
-  margin-left: 42px;
-  padding-bottom: 11px;
+  margin-left: 40px;
+  padding-bottom: 14px;
   width: 240px;
   margin-top: 0;
 }
 
 .feedback__heading--impressions {
-  margin-top: 21px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 23px;
 }
 
 .feedback__heading--emotions {
   margin-top: 19px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .feedback__content {
@@ -57,6 +61,11 @@
 
 .feedback__group--emotions {
   padding-bottom: 0;
+  margin-top: 15px;
+}
+
+.feedback__group--impressions {
+  margin-top: 14px;
 }
 
 .feedback__group-item--email {
@@ -66,19 +75,19 @@
 .feedback__textarea {
   display: flex;
   background-color: @bg-lightgrey;
-  width: 264px;
-  height: 145px;
+  width: 260px;
+  height: 141px;
   border: none;
   font-family: inherit;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 42px;
+  margin-bottom: 48px;
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 26px;
   color: #000000;
-  padding-left: 25px;
-  padding-top: 17px;
+  padding-left: 21px;
+  padding-top: 16px;
   resize: none;
 }
 
@@ -163,7 +172,7 @@
     height: 292px;
     width: 1px;
     background-color: #dbdbdb;
-    top: 61px;
+    top: 65px;
     left: 383px;
   }
 
@@ -174,20 +183,16 @@
     margin-top: 44px;
   }
 
-  .feedback__heading {
-    text-align: left;
-  }
-
   .feedback__heading--impressions {
     font-size: 21px;
     margin-left: 58px;
-    margin-top: 56px;
-    margin-bottom: 58px;
+    margin-top: 60px;
+    margin-bottom: 59px;
   }
 
   .feedback__heading--name {
     font-size: 21px;
-    margin-left: 82px;
+    margin-left: 84px;
     margin-top: 57px;
     margin-bottom: 37px;
   }
@@ -197,7 +202,7 @@
     font-size: 21px;
     text-align: center;
     margin: 0;
-    margin-top: 7px;
+    margin-top: 8px;
     position: relative;
   }
 
@@ -244,7 +249,7 @@
     margin-right: auto;
     font-size: 21px;
     text-align: center;
-    margin-top: 9px;
+    margin-top: 2px;
     position: relative;
   }
 
@@ -292,9 +297,9 @@
 
   .feedback__textarea {
     width: 81%;
-    height: 145px;
+    height: 140px;
     margin-top: 57px;
-    padding-left: 18px;
+    padding-left: 19px;
   }
 
   .feedback__button {
@@ -317,6 +322,11 @@
     padding-right: 5px;
     font-size: 14px;
   }
+
+  // .feedback__heading {
+  //   // text-align: left;
+  //   margin-top: 5px;
+  // }
 }
 
 @media (min-width: 1200px) {
@@ -325,14 +335,20 @@
   }
 
   .feedback__heading--impressions {
-    margin-top: 41px;
+    margin-top: 45px;
     margin-left: 134px;
+    text-align: left;
+  }
+
+  .feedback__group--attraction {
+    padding-bottom: 34px;
   }
 
   .feedback__heading--name {
     margin-left: 27px;
-    margin-top: 55px;
+    margin-top: 56px;
     margin-bottom: 37px;
+    text-align: left;
   }
 
   .feedback__group--impressions::before {
@@ -370,7 +386,7 @@
   }
 
   .feedback__heading--attraction {
-    margin-top: 8px;
+    margin-top: 3px;
   }
 
   .feedback__heading--attraction::before, {
@@ -416,6 +432,7 @@
 
   .feedback__group--contacts {
     width: 100%;
+    margin-top: 46px;
   }
 
   .feedback__group-item--wrapper {
@@ -427,7 +444,7 @@
 
   .feedback__textarea {
     padding-left: 20px;
-    padding-top: 18px;
+    padding-top: 16px;
     height: 141px;
     width: 78%;
   }
@@ -442,10 +459,11 @@
     width: 480px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 6px;
   }
 
   .feedback__message {
     margin-right: 31px;
-    margin-top: 33px;
+    margin-top: 29px;
   }
 }
