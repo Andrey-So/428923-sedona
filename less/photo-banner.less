@@ -1,30 +1,25 @@
-.form-banner {
+.photo-banner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 39px;
-  min-height: 147px;
 }
 
-.form-banner__heading {
+.photo-banner__heading {
   width: 255px;
   letter-spacing: 0.2px;
 }
 
-.form-banner__text {
-  width: 280px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-}
-
-.form-banner__text--photo {
+.photo-banner__text {
   width: 275px;
   position: relative;
+  padding-top: 25px;
   padding-bottom: 28px;
+  line-height: 24px;
 }
 
-.form-banner__text--photo::before {
+.photo-banner__text::before {
   position: absolute;
   content: "";
   width: 320px;
@@ -35,32 +30,32 @@
 }
 
 @media (min-width: 768px) {
-  .form-banner {
-    padding-top: 72px;
+  .photo-banner {
+    padding-top: 71px;
     min-height: initial;
   }
 
-  .form-banner__heading {
+  .photo-banner__heading {
     font-size: 30px;
     width: 330px;
   }
 
-  .form-banner__text {
-    width: 450px;
-    margin-top: 31px;
+  .photo-banner__text {
+    padding-top: 31px;
+    width: 440px;
   }
 
-  .form-banner__text--photo::before {
+  .photo-banner__text::before {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  .form-banner {
+  .photo-banner {
     padding-top: 0;
   }
 
-  .form-banner__heading {
+  .photo-banner__heading {
     margin-top: 112px;
   }
 }

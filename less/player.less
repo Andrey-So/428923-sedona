@@ -1,12 +1,16 @@
 .player {
   position: relative;
-}
+  padding-top: 33px;
+ }
 
 .player__text {
   width: 270px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 24px;
+  padding-top: 26px;
+}
+
+.player__image {
+  padding-top: 35px;
 }
 
 .player__wrapper {
@@ -44,7 +48,7 @@
   justify-content: space-between;
 }
 
-.player__replay-button {
+.player__button--replay {
   height: 25px;
   flex-grow: 0.45;
   border: none;
@@ -52,7 +56,7 @@
   cursor: pointer;
 }
 
-.player__cc-button {
+.player__button--cc {
   width: 32px;
   height: 25px;
   flex-shrink: 1;
@@ -64,13 +68,13 @@
   position: relative;
 }
 
-.player__cc-icon {
+.player__icon--cc {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.player__fullscreen-button {
+.player__button--fullscreen {
   height: 25px;
   flex-shrink: 1;
   margin-right: 16px;
@@ -79,9 +83,22 @@
   background-color: transparent;
 }
 
+.player__button {
+  fill: #5c6870;
+  // outline: none;
+}
+
+.player__button:hover {
+  fill: #333333;
+}
+
+.player__button:active {
+  fill: #c1c1c1;
+}
+
 @media (min-width: 768px) {
   .player {
-    padding-top: 66px;
+    padding-top: 65px;
     width: 648px;
   }
 
@@ -92,7 +109,7 @@
   .player__text {
     width: 430px;
     padding-top: 31px;
-    padding-bottom: 71px;
+    padding-bottom: 38px;
   }
 
   .player__image {
@@ -115,28 +132,31 @@
     justify-content: space-around;
   }
 
-  .player__replay-icon,
-  .player__cc-icon,
-  .player__fullscreen-icon {
+  .player__icon,
+  .player__icon,
+  .player__icon {
     fill: rgba(255, 255, 255, 1);
   }
 
-  .player__replay-button {
+  .player__button--replay {
     order: -1;
     flex-grow: 0;
     padding: 0;
+    padding-left: 13px;
   }
 
-  .player__cc-button {
+  .player__button--cc {
     flex-shrink: 0;
     margin: 0;
     padding: 0;
+    padding-left: 44px;
   }
 
-  .player__fullscreen-button {
+  .player__button--fullscreen {
     flex-shrink: 0;
     margin: 0;
     padding: 0;
+    padding-right: 21px;
   }
 
   .player__range-input {
@@ -147,8 +167,12 @@
 
 @media (min-width: 1200px) {
   .player {
-    padding-top: 71px;
+    padding-top: 70px;
     width: 800px;
+  }
+
+  .player__text {
+    padding-bottom: 36px;
   }
 
   .player__range-input {
