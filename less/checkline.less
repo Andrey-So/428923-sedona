@@ -7,7 +7,7 @@
 .checkline--radio {
   margin: 0;
   padding-top: 17px;
-  padding-bottom: 32px;
+  padding-bottom: 29px;
 }
 
 .checkline--last {
@@ -38,31 +38,37 @@
   margin: 0;
   margin-bottom: 17px;
   padding-top: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
 }
 
 .checkline__input--radio:checked+.checkline__label--radio::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#f2f2f2'></circle><circle r='11' cx='28' cy='28' fill='#333333'></circle></svg>");
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#f2f2f2'></circle><circle r='11' cx='28' cy='28' fill='#333333'></circle></svg>");
+  background-image: url("../img/radio-checked.svg");
 }
 
 .checkline__input--radio:checked:hover+.checkline__label--radio::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#e5e5e5'></circle><circle r='11' cx='28' cy='28' fill='#333333'></circle></svg>");
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#e5e5e5'></circle><circle r='11' cx='28' cy='28' fill='#333333'></circle></svg>");
+  background-image: url("../img/radio-checked-hover.svg");
 }
 
 .checkline__input--radio:checked:active+.checkline__label--radio::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#d5d5d5'></circle><circle r='11' cx='28' cy='28' fill='#a4a4a4'></circle></svg>");
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#d5d5d5'></circle><circle r='11' cx='28' cy='28' fill='#a4a4a4'></circle></svg>");
+  background-image: url("../img/radio-checked-active.svg");
 }
 
 .checkline__input--radio:not(checked)+.checkline__label--radio::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#f2f2f2'></circle></svg>");
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#f2f2f2'></circle></svg>");
+  background-image: url("../img/radio.svg");
 }
 
 .checkline__input--radio:not(checked):hover+.checkline__label--radio::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#e5e5e5'></circle></svg>");
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#e5e5e5'></circle></svg>");
+  background-image: url("../img/radio-hover.svg");
 }
 
 .checkline__input--radio:not(checked):active+.checkline__label--radio::before {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#d5d5d5'></circle></svg>");
+  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><circle r='28' cx='28' cy='28' fill='#d5d5d5'></circle></svg>");
+  background-image: url("../img/radio-active.svg");
 }
 
 
@@ -88,12 +94,10 @@
 
 .checkline__input--checkbox:not(checked):hover+.checkline__label--checkbox::before {
   background-image: url("../img/checkbox-hover.svg");
-  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#e5e5e5'></rect></svg>");
 }
 
 .checkline__input--checkbox:not(checked):active+.checkline__label--checkbox::before {
   background-image: url("../img/checkbox-active.svg");
-  // background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='56'><rect  width='56' height='56' cx='28' cy='28' rx='5' fill='#d5d5d5'></rect></svg>");
 }
 
 .checkline--small-margins {
@@ -135,7 +139,7 @@
 
   .checkline__label--radio::before,
   .checkline__label--checkbox::before {
-    left: -75px;
+    left: -79px;
   }
 }
 
