@@ -1,15 +1,9 @@
-.page-main {
-  padding: 0;
-  margin: 0;
-  margin-top: -28px;
-}
-
-.page-main__intro {
+.intro {
   background-image: linear-gradient(#80909a 389px, #ffffff 389px);
   position: relative;
 }
 
-.page-main__intro::before {
+.intro::before {
   position: absolute;
   content: "";
   height: 280px;
@@ -21,7 +15,7 @@
   background-repeat: no-repeat;
 }
 
-.page-main__intro::after {
+.intro::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -33,25 +27,25 @@
   background-repeat: no-repeat;
 }
 
-.page-main__intro--low {
+.intro--low {
   background-image: linear-gradient(#80909a 157px, #ffffff 157px);
 }
 
-.page-main__intro--low::after
+.intro--low::after
 {
   bottom: 2px;
 }
 
-.page-main__intro-img {
+.intro__img {
   width: 100%;
   height: 389px;
 }
 
-.page-main__intro-img--low {
+.intro__img--low {
   height: 157px;
 }
 
-.page-main__intro--low::before {
+.intro--low::before {
   background-image: url("../img/text-sedona.svg");
   background-size: 230px 70px;
   height: 70px;
@@ -60,21 +54,16 @@
   left: 45px;
 }
 
-.page-main__image-wrapper--low {
-  max-height: 157px;
-  background-image: linear-gradient(#80909a 153px, #ffffff 153px);
-}
-
 @media (min-width: 768px) {
-  .page-main__intro-img {
+  .intro__img {
     min-height: 518px;
   }
 
-  .page-main__intro-img--low {
+  .intro__img--low {
     min-height: 289px;
   }
 
-  .page-main__intro::before {
+  .intro::before {
     height: 350px;
     width: 470px;
     background-size: 470px 350px;
@@ -82,7 +71,7 @@
     left: 149px;
   }
 
-  .page-main__intro--low::before {
+  .intro--low::before {
     top: 90px;
     height: 90px;
     width: 450px;
@@ -90,41 +79,36 @@
     left: 160px;
   }
 
-  .page-main__intro::after {
+  .intro::after {
     height: 57px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
     background-size: 100% 57px;
     background-position: 0px 0px;
   }
-
-  .page-main__form {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 @media (min-width: 1200px) {
-  .page-main__intro {
+  .intro {
     background-color: #ffffff;
     min-height: 521px;
   }
 
-  .page-main__intro--low {
+  .intro--low {
     min-height: 300px;
   }
 
-  .page-main__intro-img--low {
+  .intro__img--low {
     min-height: 300px;
   }
 
-  .page-main__intro::before {
+  .intro::before {
     left: 370px;
     top: 78px;
     background-image: url("../img/text-sedona-index.svg");
     background-size: 459px 350px;
   }
 
-  .page-main__intro--low::before {
+  .intro--low::before {
     top: 96px;
     height: 90px;
     width: 460px;
@@ -133,7 +117,7 @@
     background-image: url("../img/text-sedona.svg")
   }
 
-  .page-main__intro::after {
+  .intro::after {
     height: 61px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-size: 100% 61px;
