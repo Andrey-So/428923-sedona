@@ -1,0 +1,145 @@
+.banner {
+  padding-top: 36px;
+  padding-bottom: 6px;
+}
+
+.banner--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  min-height: 147px;
+}
+
+.banner--photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.banner__heading,
+.banner__text {
+  width: 255px;
+  margin: 0 auto;
+}
+
+.banner__heading {
+  padding-bottom: 27px;
+}
+
+.banner__heading--form {
+  width: 255px;
+  letter-spacing: 0.2px;
+}
+
+.banner__heading--photo {
+  width: 255px;
+  letter-spacing: 0.2px;
+}
+
+.banner__text--form {
+  width: 280px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.banner__text--photo {
+  width: 275px;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  line-height: 24px;
+}
+
+.banner__text--photo::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: -23px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-top: 47px;
+    padding-bottom: 50px;
+    min-height: 106px;
+  }
+
+  .banner--form {
+    padding-top: 71px;
+    min-height: initial;
+  }
+
+  .banner--photo {
+    padding-top: 71px;
+    min-height: initial;
+  }
+
+  .banner__heading {
+    width: 450px;
+    font-size: 21px;
+    padding-bottom: 28px;
+  }
+
+  .banner__heading--form {
+    font-size: 30px;
+    width: 330px;
+  }
+
+  .banner__heading--photo {
+    font-size: 30px;
+    width: 330px;
+  }
+
+  .banner__text {
+    width: 500px;
+  }
+
+  .banner__text--form {
+    width: 450px;
+    margin-top: 31px;
+  }
+
+  .banner__text--photo {
+    padding-top: 31px;
+    width: 440px;
+  }
+
+  .banner__text--photo::before {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    padding-top: 47px;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
+  .banner--form {
+    padding-top: 0;
+  }
+
+  .banner--photo {
+    padding-top: 0;
+  }
+
+  .banner__heading--form {
+    margin-top: 108px;
+  }
+
+  .banner__heading--photo {
+    margin-top: 109px;
+  }
+
+  .banner__text--photo {
+    padding-bottom: 29px;
+  }
+}
