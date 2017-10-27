@@ -1,13 +1,13 @@
-.main-nav {
+.nav {
   position: relative;
 }
 
-.main-nav__list {
+.nav__list {
   display: flex;
   flex-direction: column;
 }
 
-.main-nav__item {
+.nav__item {
   width: 320px;
   height: 37px;
   background-color: @bg-greyblue;
@@ -23,20 +23,20 @@
   letter-spacing: 0.1px;
 }
 
-.main-nav__item:hover {
+.nav__item:hover {
   border-top: 1px solid #86b2cd;
   border-bottom: 1px solid #cccccc;
   background-color: #669ec0;
 }
 
-.main-nav__item:active {
+.nav__item:active {
   border-top: 1px solid #77acca;
   border-bottom: 1px solid #cccccc;
   background-color: #5496bd;
   color: #88b6d1;
 }
 
-.main-nav__button {
+.nav__button {
   position: absolute;
   border: none;
   background-color: transparent;
@@ -46,7 +46,7 @@
   right: 14px;
 }
 
-.main-nav__logo {
+.nav__logo {
   display: flex;
   justify-content: center;
   height: 84px;
@@ -55,7 +55,7 @@
   width: 320px;
 }
 
-.main-nav__toggler {
+.nav__toggler {
   position: absolute;
   top: 235px;
   right: 12px;
@@ -67,12 +67,12 @@
 }
 
 @media (min-width: 768px) {
-  .main-nav__list {
+  .nav__list {
     display: flex;
     flex-direction: row;
   }
 
-  .main-nav__item {
+  .nav__item {
     border: none;
     background-color: #ffffff;
     color: #000000;
@@ -81,48 +81,48 @@
     width: 20%;
   }
 
-  .main-nav__item:last-child {
+  .nav__item:last-child {
     box-shadow: none;
   }
 
-  .main-nav__item--dummy {
+  .nav__item--dummy {
     display: flex;
   }
 
-  .main-nav__item:hover {
+  .nav__item:hover {
     color: @bg-greyblue;
     border: none;
     background-color: #ffffff;
   }
 
-  .main-nav__item:active {
+  .nav__item:active {
     border: none;
     background-color: #ffffff;
     color: #b2b2b2;
   }
 
-  .main-nav__item--active {
+  .nav__item--active {
     color: #766357;
   }
 
-  .main-nav__item--active:hover {
+  .nav__item--active:hover {
     color: #604e43;
   }
 
-  .main-nav__item--active:active {
+  .nav__item--active:active {
     color: #d6d0cc;
   }
 
-  .main-nav__button {
+  .nav__button {
     display: none;
   }
 
-  .main-nav__logo {
+  .nav__logo {
     order: 0;
     width: 20%;
   }
 
-  .main-nav__toggler {
+  .nav__toggler {
     display: none;
   }
 }
