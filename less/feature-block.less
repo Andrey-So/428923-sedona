@@ -44,6 +44,7 @@
   width: 320px;
   height: 37px;
   top: 0px;
+  left: 0px;
   background-image: url("../img/bg-triangle.svg");
 }
 
@@ -56,11 +57,11 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 39px;
+  padding-bottom: 38px;
 }
 
 .feature-block__wrapper--items {
-  min-height: 416px;
+  margin-bottom: 22px;
 }
 
 .feature-block--bottom {
@@ -81,7 +82,7 @@
   width: 280px;
   height: 1px;
   background-color: #d6d6d6;
-  bottom: 0px;
+  bottom: -1px;
   left: 20px;
 }
 
@@ -93,7 +94,6 @@
   padding-bottom: 27px;
   width: 255px;
 }
-
 
 @media (min-width: 768px) {
   .feature-block__wrapper {
@@ -136,9 +136,12 @@
   }
 
   .feature-block__wrapper--items {
-    min-height: 330px;
+    margin: 0;
+    padding: 0;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 59px;
+    margin-bottom: 61px;
   }
 
   .feature-block__item {
@@ -146,7 +149,7 @@
     min-height: 210px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
   }
@@ -214,7 +217,8 @@
   }
 
   .feature-block__wrapper--items {
-    min-height: 330px;
+    margin-top: 59px;
+    margin-bottom: 56px;
   }
 
   .feature-block__text {
@@ -268,7 +272,7 @@
   }
 
   .feature-block__image {
-    height: initial;
+    height: auto;
     margin-top: -70px;
   }
 }
