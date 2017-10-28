@@ -31,7 +31,7 @@
   width: 56px;
   height: 56px;
   left: -78px;
-  top: -17px;
+  top: -15px;
 }
 
 .checkline--checkbox {
@@ -137,6 +137,11 @@
 }
 
 @media (min-width: 1200px) {
+  .checkline__label--radio::before,
+  .checkline__label--checkbox::before {
+    left: -75px;
+  }
+
   .checkline--checkbox {
     margin-left: -4px;
     margin-bottom: 22px;
