@@ -91,7 +91,7 @@ gulp.task("sprite", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("img"));
- })
+ });
 
  gulp.task("webp", function () {
   return gulp.src("img/**/*.{png, jpg}")
