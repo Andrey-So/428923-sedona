@@ -1,5 +1,5 @@
 .popup-success {
-  position: absolute;
+  position: fixed;
   min-height: 323px;
   width: 100%;
   display: flex;
@@ -9,7 +9,9 @@
   background-image: linear-gradient(to bottom, #ffffff 225px, #f2f2f2 225px);
   z-index: 5;
   box-shadow: 0 10px 19px 0 #dfdfdf;
-  bottom: 360px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .popup-success__header {
@@ -30,8 +32,6 @@
   .popup-success {
     width: 645px;
     min-height: 345px;
-    left: 60px;
-    bottom: 495px;
   }
 
   .popup-success__header {
@@ -42,12 +42,5 @@
   .popup-success__text {
     font-size: 14px;
     width: 420px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .popup-success {
-    left: 290px;
-    bottom: 505px;
   }
 }

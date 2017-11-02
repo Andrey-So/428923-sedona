@@ -108,7 +108,7 @@
                 <b class="gallery-item__name">Неродные просторы</b>
                 <p class="gallery-item__author">Автор фото: Борис</p>
               </div>
-              <button class="gallery-item__like gallery-item__like--wide">1350</button>
+              <a class="gallery-item__like gallery-item__like--wide" href="#">1350</a>
             </div>
           </div>
           <div class="gallery__item gallery-item">
@@ -127,7 +127,7 @@
                 <b class="gallery-item__name">Местная растительность</b>
                 <p class="gallery-item__author">Автор фото: Сергей</p>
               </div>
-              <button class="gallery-item__like">143</button>
+              <a class="gallery-item__like" href="#">143</a>
             </div>
           </div>
           <div class="gallery__item gallery-item">
@@ -146,7 +146,7 @@
                 <b class="gallery-item__name">Дорога на север</b>
                 <p class="gallery-item__author">Автор фото: Петр</p>
               </div>
-              <button class="gallery-item__like">96</button>
+              <a class="gallery-item__like" href="#">96</a>
             </div>
           </div>
           <div class="gallery__item gallery-item">
@@ -165,7 +165,7 @@
                 <b class="gallery-item__name">Мост дьявола</b>
                 <p class="gallery-item__author">Автор фото: Антон</p>
               </div>
-              <button class="gallery-item__like">254</button>
+              <a class="gallery-item__like" href="#">254</a>
             </div>
           </div>
         </div>
@@ -183,24 +183,29 @@
           <div class="player__wrapper">
             <div class="player__range-input range-input">
               <div class="range-input__line">
+                <title>Прокрутка</title>
                 <button class="range-input__button">
-                  <svg class="range-input__dot">
+                  <title>Кнопка прокрутки</title>
+                  <svg width="10" height="10">
                     <use xlink:href="#range-input__dot"></use>
                   </svg>
                 </button>
               </div>
             </div>
             <button class="player__button player__button--replay">
+              <title>Кнопка "проиграть сначала"</title>
               <svg class="player__icon player__icon--replay" width="16" height="20">
                 <use class="player__fill player__fill--replay" xlink:href="#player__icon--replay"></use>
               </svg>
             </button>
             <button class="player__button player__button--cc">
+              <title>Кнопка "субтитры"</title>
               <svg class="player__icon player__icon--cc" width="32" height="20">
                 <use class="player__fill player__fill--cc" xlink:href="#player__icon--cc"></use>
               </svg>
             </button>
             <button class="player__button player__button--fullscreen">
+              <title>Кнопка "на весь экран"</title>
               <svg class="player__icon player__icon--fullscreen" width="20" height="20">
                 <use class="player__fill player__fill--fullscreen" xlink:href="#player__icon--fullscreen"></use>
               </svg>
