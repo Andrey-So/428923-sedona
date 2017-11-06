@@ -9,10 +9,10 @@
   <body class="body">
     <div class="wrapper">
       <svg style="display: none">
-        <symbol viewBox="0 0 22.199 22.199" id="nav__icon">
+        <symbol viewBox="0 0 22.199 22.199" id="icon-nav-close">
           <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
         </symbol>
-        <symbol viewBox="0 0 22.928 21.982" id="page-header__icon">
+        <symbol viewBox="0 0 22.928 21.982" id="icon-nav-burger">
           <rect width="22.928" height="3.964"/>
           <rect y="9.009" width="22.928" height="3.964"/>
           <rect y="18.018" width="22.928" height="3.964"/>
@@ -49,8 +49,8 @@
       <header>
         <div class="nav">
           <button class="nav__button" type="button">
-            <svg class="nav__icon" width="22.199" height="22.199" fill="#ffffff">
-              <use xlink:href="#nav__icon"></use>
+            <svg width="22.199" height="22.199" fill="#ffffff">
+              <use xlink:href="#icon-nav-close"></use>
             </svg>
           </button>
           <nav class="nav__list">
@@ -67,8 +67,8 @@
             <a class="link nav__item" href="#">Html Academy</a>
           </nav>
           <button class="nav__toggler visually-hidden" type="button">
-            <svg class="page-header__icon" width="21" height="21" fill="#81b3d2">
-              <use xlink:href="#page-header__icon"></use>
+            <svg width="21" height="21" fill="#81b3d2">
+              <use xlink:href="#icon-nav-burger"></use>
             </svg>
           </button>
         </div>
@@ -88,7 +88,7 @@
           <h1 class="banner__heading banner__heading--form heading">Оставьте свой отзыв</h1>
           <p class="banner__text banner__text--form text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <form class="page-main__form feedback" method="post" action="https://echo.htmlacademy.ru">
+        <form class="main__form feedback" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="feedback__group feedback__group--name">
             <h2 class="feedback__heading feedback__heading--name">Представьтесь:</h2>
             <div class="feedback__content">
@@ -174,7 +174,7 @@
             <h2 class="feedback__heading feedback__heading--emotions">Опишите свои эмоции:</h2>
             <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <div class="feedback__button--wrapper">
+          <div class="feedback__button feedback__button--wrapper">
           <button class="feedback__button button" type="submit">Отправить отзыв</button>
           <p class="feedback__message">* — Обязательные поля</p>
         </div>
