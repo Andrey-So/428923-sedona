@@ -83,20 +83,20 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
  });
 
- gulp.task("image", function() {
-   return gulp.src("img/**/*.{png, jpg, svg}")
+gulp.task("image", function() {
+  return gulp.src("img/**/*.{png, jpg, svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("img"));
- });
+});
 
- gulp.task("webp", function () {
+gulp.task("webp", function () {
   return gulp.src("img/**/*.{png, jpg}")
     .pipe(gulp.dest("img"));
- });
+});
 
 gulp.task("serve", ["style"], function() {
   server.init({
